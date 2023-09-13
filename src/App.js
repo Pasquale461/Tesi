@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Assicurati di importare anche Routes
+
+
+import Home from './components/Home';
+import Ctfs from './components/Ctfs';
+import { StyledEngineProvider } from '@mui/material';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <StyledEngineProvider injectFirst>
+        <Routes> {/* Utilizza <Routes> come contenitore principale */}
+          <Route path="/" element={<Home />} /> {/* Usa l'element prop per specificare il componente */}
+          <Route path="Ctfs" element={<Ctfs />} />
+
+        </Routes>
+      </StyledEngineProvider>
+    </Router>
   );
 }
 
