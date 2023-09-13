@@ -1,0 +1,31 @@
+/* Footer.css */
+.footer {
+    background-color: #8a2be2; /* Viola */
+    color: rgb(6, 9, 58); /* Verde fluo */
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+  }
+  
+  .footer a {
+    
+    
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .footer a:hover {
+    border-bottom: 1px solid #0f0;
+  }
+  
+  /* Aggiunta di altezza minima per il contenuto principale */
+  .main-content {
+    min-height: calc(100vh - 120px); /* 120px è l'altezza dell'header e del footer combinati */
+  }
+  
