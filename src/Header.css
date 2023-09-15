@@ -1,14 +1,13 @@
 /* Header.css */
 .header {
-    background-color: #8727e0; /* Viola */
+  background-image: linear-gradient(90deg, rgba(237, 110, 160, 0.83) 17%, rgba(167, 104, 237, 0.76) 63%);
     color: rgb(6, 9, 58); /* Verde fluo */
     padding: 2px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: sticky;
-    
-    position: fixed; /* Fissa l'header in cima allo schermo */
+    margin-bottom: 5%;
     top: 0; /* Posiziona l'header in cima allo schermo */
     width: 100%; /* Larghezza al 100% del viewport */
     z-index: 999; /* Assicura che l'header sia sopra gli altri elementi */
@@ -30,7 +29,7 @@
   }
   
   .header-nav {
-    background-color: #8727e0; /* Viola */
+    background-image: linear-gradient(90deg, rgba(237, 110, 160, 0.83) 17%, rgba(167, 104, 237, 0.76) 63%);
     position: absolute;
     top: 100%; /* Posiziona il menu sotto l'header */
     left: -250px; /* Nascondi il menu lateralmente */
@@ -84,9 +83,7 @@ a{
   }
   .css-4t3x6l-MuiPaper-root-MuiDrawer-paper
   {
-    background-color: #8727e0;
-    width: 20%;
-  }
+    background-image: linear-gradient(180deg, #ed6ea0 13%, #a768ed 88%);  }
 
   .css-i9fmh8-MuiBackdrop-root-MuiModal-backdrop
   {

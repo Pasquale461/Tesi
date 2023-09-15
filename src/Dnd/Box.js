@@ -1,6 +1,7 @@
 import { useDrag } from 'react-dnd'
 import React from 'react';
 import { ItemTypes } from './ItemTypes.js'
+import './../Ctfs.css';
 const style = {
   
  
@@ -23,8 +24,8 @@ export const Box = function Box({ name, imgPath }) { // Aggiungi imgPath come pa
   const opacity = isDragging ? 0.4 : 1;
   
   return (
-    <div ref={drag} style={{ ...style, opacity }} data-testid={`box`}>
-      <img src={imgPath} alt={name} />
+    <div ref={drag} style={{ ...style, opacity }} data-testid={`box`} className='card'>
+      <img src={imgPath} alt={name} className='attack'/>
       {/*<p id='element'>{name}</p>*/}
     </div>
   );

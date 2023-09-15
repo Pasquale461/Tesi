@@ -11,7 +11,7 @@ function Home() {
   return (
     <div className="App">
        <Header></Header>
-      <Parallax pages={2.5} style={{ top: '0', left: '0' }} className="animation">
+      <Parallax pages={2.589} style={{ top: '0', left: '0' }} className="animation">
       
         <ParallaxLayer offset={0} speed={0.1}>
           <div className="animation_layer parallax" id="sky"></div>
