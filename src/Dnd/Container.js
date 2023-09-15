@@ -9,75 +9,82 @@ export const Container = memo(function Container({level}) {
     case '1':
       return (
 
-        <div id='griglia' className='container'>
+        <div id='flex'>
           <div style={{ clear: 'both' }}>
             <Dustbin level='1'/>
-          </div>
+          </div >
           <div id = 'elements'>
-          <Box name="Sensore"  imgPath={require('./../images/sqlinj.png')} />
-          <Box name="Automobile" imgPath={require('./../images/ddos.png')} className='attack' />
+          <Box name="SQL Injection"  imgPath={require('./../images/sqlinj.png')} />
+          <Box name="DDOS" imgPath={require('./../images/ddos.png')} className='attack' />
           
           
           </div>
+          </div>
           
-        </div>
+        
       )
      
       case '2':
         return (
-  
-          <div id='griglia' className='container'>
-            <div style={{ clear: 'both' }}>
-              <Dustbin level='2'/>
-            </div>
-            <div id = 'elements'style={{ overflow: 'hidden', clear: 'both' }}>
-            <Box name="Semaforo" imgPath={require('./../images/sqlinj.png')} />
-            <Box name="Automobile" imgPath={require('./../images/sqlinj.png')} />
-            
-            </div>
+          <div id='flex'>
+          <div style={{ clear: 'both' }}>
+            <Dustbin level='2'/>
+          </div >
+          <div id = 'elements'>
+          <Box name="SQL Injection"  imgPath={require('./../images/sqlinj.png')} />
+          <Box name="DDOS" imgPath={require('./../images/ddos.png')} className='attack' />
+          
+          
+          </div>
           </div>
         )
       
         case '3':
       return (
 
-        <div id='griglia' className='container'>
-         <div style={{ clear: 'both' }}>
-            <Dustbin level='3'/>
-          </div>
-          <div id = 'elements'style={{ overflow: 'hidden', clear: 'both' }}>
-          <Box name="Semaforo" imgPath={require('./../images/sqlinj.png')} />
-          <Box name="Sensore" imgPath={require('./../images/sqlinj.png')} />
-          </div>
+        <div id='flex'>
+        <div style={{ clear: 'both' }}>
+          <Dustbin level='3'/>
+        </div >
+        <div id = 'elements'>
+        <Box name="SQL Injection"  imgPath={require('./../images/sqlinj.png')} />
+        <Box name="DDOS" imgPath={require('./../images/ddos.png')} className='attack' />
+        
+        
+        </div>
         </div>
       )
      
       case '4':
       return (
 
-        <div id='griglia' className='container'>
+        <div id='flex'>
           <div style={{ clear: 'both' }}>
             <Dustbin level='4'/>
+          </div >
+          <div id = 'elements'>
+          <Box name="SQL Injection"  imgPath={require('./../images/sqlinj.png')} />
+          <Box name="DDOS" imgPath={require('./../images/ddos.png')} className='attack' />
+          
+          
           </div>
-          <div id = 'elements'style={{ overflow: 'hidden', clear: 'both' }}>
-          <Box name="Sensore" imgPath={require('./../images/sqlinj.png')} />
-          <Box name="Automobile" imgPath={require('./../images/sqlinj.png')} />
           </div>
-        </div>
       )
      
     default:
       return (
 
-        <div id='griglia' className='container'>
+        <div id='flex'>
           <div style={{ clear: 'both' }}>
-            <Dustbin level='1'/>
+            <Dustbin level='5'/>
+          </div >
+          <div id = 'elements'>
+          <Box name="SQL Injection"  imgPath={require('./../images/sqlinj.png')} />
+          <Box name="DDOS" imgPath={require('./../images/ddos.png')} className='attack' />
+          
+          
           </div>
-          <div id = 'elements'style={{ overflow: 'hidden', clear: 'both' }}>
-          <Box name="Semaforo" imgPath={require('./../images/sqlinj.png')} />
-          <Box name="Sensore" imgPath={require('./../images/sqlinj.png')} />
           </div>
-        </div>
       )
   }
  

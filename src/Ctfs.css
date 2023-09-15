@@ -7,12 +7,16 @@
   padding-bottom: 5%;
   border-radius: 50px;
 }
+#flex
+{
+  display: flex;
+}
 .container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  height: 100vh;
-  scale: 0.5;
+  
+  scale: 0.8;
   
   color: #fff; /* Testo bianco */
 }
@@ -64,7 +68,7 @@ color: aliceblue;
   #arrows
   {
     position: sticky;
-    margin-bottom: -5%;
+    margin-bottom: -2%;
   }
   #elements{
     margin: 10%;
@@ -139,6 +143,10 @@ color: aliceblue;
   
 }
 
+.texthide
+{
+  color: black;
+}
 .arrow span:nth-child(1) {
     animation-delay: 0.2s;
 }

@@ -73,10 +73,7 @@
   .header-nav a:hover {
     border-bottom: 1px solid  rgb(6, 9, 58); /* Verde fluo */;
   }
-a{
-    text-decoration: none;
-    color: black;
-  }
+
   .NavBar
   {
     background-color: #8727e091;

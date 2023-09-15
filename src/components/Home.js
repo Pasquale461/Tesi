@@ -28,17 +28,16 @@ function Home() {
         <ParallaxLayer offset={0.9999} speed={1}>
        
           <TextBlock/>
+          
           <Link to="Ctfs">
-         <img src={require('../images/hacker.png')} id='hacker' className='hack center'></img>
-         <br></br>
+          <img src={require('../images/hacker.png')} id='hacker' className='center'></img>
          </Link>
-         
         </ParallaxLayer>
         
         <ParallaxLayer offset={2.1} speed={0.5}> {/* Aggiungi un nuovo ParallaxLayer per il footer */}
           
           
-          <Footer />
+          <Footer/>
         </ParallaxLayer>
        
       </Parallax>

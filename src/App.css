@@ -119,6 +119,10 @@ width: auto;
   
 }
 
+#hacker
+{
+  scale: 0.3;
+}
 #hacker:hover
 {
 
@@ -128,7 +132,13 @@ width: auto;
 }
 
 
-
+#elements
+{
+ display: table;
+  margin-right: 15%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
 
 
 
@@ -146,4 +156,10 @@ width: auto;
 #root
 {
   width: 100%;
+}
+
+a
+{
+  text-decoration: none;
+  color: black;
 }

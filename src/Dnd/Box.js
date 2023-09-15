@@ -13,7 +13,9 @@ export const Box = function Box({ name, imgPath }) { // Aggiungi imgPath come pa
     type: ItemTypes.BOX,
     item: { name },
     end: (item, monitor) => {
-      // Funzione end
+      if (monitor.didDrop()) {
+        alert('Attacco ' + name + ' effettuato');
+      }
     },
     collect: (monitor) => ({
       isDragging: monitor.isDragging(),
