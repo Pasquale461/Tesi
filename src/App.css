@@ -97,6 +97,8 @@ body
   background-color: #1c0038;
   display:flex;
   margin: auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
   
 }
 
@@ -162,4 +164,19 @@ a
 {
   text-decoration: none;
   color: black;
+}
+
+::-webkit-scrollbar
+{
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb
+{
+  background-color: #9e2d91;
+}
+
+::-webkit-scrollbar-thumb:hover
+{
+  background-color: rgb(159, 39, 89);
 }

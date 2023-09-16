@@ -16,6 +16,7 @@ export const Container = memo(function Container({level}) {
           <div id = 'elements'>
           <Box name="SQL Injection"  imgPath={require('./../images/sqlinj.png')} />
           <Box name="DDOS" imgPath={require('./../images/ddos.png')} className='attack' />
+          <Box name="Botnet" imgPath={require('./../images/botnet.png')} className='attack' />
           
           
           </div>
@@ -33,6 +34,7 @@ export const Container = memo(function Container({level}) {
           <div id = 'elements'>
           <Box name="SQL Injection"  imgPath={require('./../images/sqlinj.png')} />
           <Box name="DDOS" imgPath={require('./../images/ddos.png')} className='attack' />
+          <Box name="Xss" imgPath={require('./../images/xss.png')} className='attack' />
           
           
           </div>
@@ -49,6 +51,7 @@ export const Container = memo(function Container({level}) {
         <div id = 'elements'>
         <Box name="SQL Injection"  imgPath={require('./../images/sqlinj.png')} />
         <Box name="DDOS" imgPath={require('./../images/ddos.png')} className='attack' />
+        <Box name="Phishing" imgPath={require('./../images/phishing.png')} className='attack' />
         
         
         </div>
@@ -65,6 +68,8 @@ export const Container = memo(function Container({level}) {
           <div id = 'elements'>
           <Box name="SQL Injection"  imgPath={require('./../images/sqlinj.png')} />
           <Box name="DDOS" imgPath={require('./../images/ddos.png')} className='attack' />
+          <Box name="Botnet" imgPath={require('./../images/botnet.png')} className='attack' />
+
           
           
           </div>
@@ -81,6 +86,7 @@ export const Container = memo(function Container({level}) {
           <div id = 'elements'>
           <Box name="SQL Injection"  imgPath={require('./../images/sqlinj.png')} />
           <Box name="DDOS" imgPath={require('./../images/ddos.png')} className='attack' />
+          <Box name="Xss" imgPath={require('./../images/xss.png')} className='attack' />
           
           
           </div>

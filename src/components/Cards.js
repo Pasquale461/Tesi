@@ -20,20 +20,20 @@ function Cards(props) {
 return(
 <div class="tariffCards">
 <div class="economy" onClick={() => handleClick(1)}>
-<img src='https://www.keplerotech.com/keplero-2020/wp-content/uploads/2022/04/smartcity-by-keplero.jpg' className='fitted'></img>        <h3>Primo Livello</h3>
-  <span>Full Insurance</span>
+<img src={require('./../images/citylevel.jpg')} className='fitted'></img>        <h3>Primo Livello</h3>
+  <span>APPLICAZIONI E SERVIZI</span>
 </div>
 <div class="premiumeconomy" onClick={() => handleClick(2)}>
-<img src='https://news.mit.edu/sites/default/files/images/202110/MIT-Wise-Systems-01.jpg' className='fitted'></img>        <h3>Secondo Livello</h3>
-  <span>Full Insurance</span>
+<img src={require('./../images/transport.jpg')} className='fitted'></img>        <h3>Secondo Livello</h3>
+  <span>SERVICE DELIVERY PLATFORM</span>
 </div>
 <div class="business" onClick={() => handleClick(3)}>
-<img src='https://w0.peakpx.com/wallpaper/211/446/HD-wallpaper-automotive-electronics-test-automotive-sensors-test-automotive-lidar-sensors-test-car-technology.jpg' className='fitted'></img>      <h3>Terzo Livello</h3>
-  <span>Full Insurance</span>
+<img src={require('./../images/sensorlevel.jpg')} className='fitted'></img>      <h3>Terzo Livello</h3>
+  <span>SENSORISTICA</span>
 </div>
 <div class="first" onClick={() => handleClick(4)}>
-<img src='https://wallpapercave.com/wp/wp9501501.jpg' className='fitted'></img>     <h3>Quarto Livello</h3>
-  <span>Full Insurance</span>
+<img src={require('./../images/network.jpg')} className='fitted'></img>     <h3>Quarto Livello</h3>
+  <span>INFRASTUTTURA E RETI</span>
 </div>
 </div>
   );
