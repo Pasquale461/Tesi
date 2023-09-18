@@ -3,7 +3,7 @@ import { Box } from './Box.js'
 import { Dustbin } from './Dustbin.js'
 import Hacker from '../images/hacker.png'
 import './../Ctfs.css';
-export const Container = memo(function Container({level}) {
+export const Container = memo(function Container({ level, name, onNameAfterDrop }) {
   
   switch (level) {
     case '1':
@@ -11,7 +11,7 @@ export const Container = memo(function Container({level}) {
 
         <div id='flex'>
           <div style={{ clear: 'both' }}>
-            <Dustbin level='1'/>
+            <Dustbin level='1' onNameAfterDrop={onNameAfterDrop}/>
           </div >
           <div id = 'elements'>
           <Box name="SQL Injection"  imgPath={require('./../images/sqlinj.png')} />

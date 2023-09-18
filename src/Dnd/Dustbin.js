@@ -2,10 +2,12 @@ import { useDrop } from 'react-dnd'
 import { ItemTypes } from './ItemTypes.js'
 import './../App.css';
 import './../Ctfs.css';
-export const Dustbin = function Dustbin({level}) {
+export const Dustbin = function Dustbin({ level, onNameAfterDrop }) {
   const [{ canDrop, isOver }, drop] = useDrop(() => ({
     accept: ItemTypes.BOX,
-    drop: () => ({ name: 'Smart City' }),
+    drop: (item) => {
+      onNameAfterDrop(item.name);
+      return { name: 'Smart City' };},
     collect: (monitor) => ({
       isOver: monitor.isOver(),
       canDrop: monitor.canDrop(),

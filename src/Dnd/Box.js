@@ -14,7 +14,7 @@ export const Box = function Box({ name, imgPath }) { // Aggiungi imgPath come pa
     item: { name },
     end: (item, monitor) => {
       if (monitor.didDrop()) {
-        alert('Attacco ' + name + ' effettuato');
+        //
       }
     },
     collect: (monitor) => ({

@@ -18,8 +18,8 @@
     .tariffCards > div {
         
       position: relative;
-      width: 65vh;
-      height: 35vh;
+      width: 33pc;
+      height: 17pc;
       border-radius: 12px;
       color: white;
       transform: rotateX(45deg) rotateY(-15deg) rotate(45deg);
@@ -90,3 +90,20 @@
         height: -webkit-fill-available;
     }
   
+    
+    #blue {
+      text-shadow: 5px 3px 6px black;
+    font-size: 65px;
+    color: #3c3f9d;
+    -webkit-text-stroke-width: 1px;
+    margin: 3%;
+    }
+    #red {
+      text-shadow: 5px 3px 6px black;
+      font-size: 65px;
+      color: #991778;
+      -webkit-text-stroke-width: 1px;
+      margin: 3%;
+      
+  }
+    
