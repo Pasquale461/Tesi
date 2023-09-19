@@ -2,6 +2,8 @@
 
   
   .tariffCards {
+    width: 20%;
+    margin-right: 10%;
     user-select: none;
     transform: translate3d(0, 0, 0);
     transform-style: preserve-3d; }
@@ -18,8 +20,8 @@
     .tariffCards > div {
         
       position: relative;
-      width: 33pc;
-      height: 17pc;
+      
+      height: 12pc;
       border-radius: 12px;
       color: white;
       transform: rotateX(45deg) rotateY(-15deg) rotate(45deg);
