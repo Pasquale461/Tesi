@@ -10,16 +10,16 @@ export const Container = memo(function Container({ level, name, onNameAfterDrop 
       return (
 
         <div id='flex'>
-          <div style={{ clear: 'both' }}>
+          
             <Dustbin level='1' onNameAfterDrop={onNameAfterDrop}/>
-          </div >
+          
           <div id = 'elements'>
           <Box name="SQL Injection"  imgPath={require('./../images/sqlinj.png')} />
           <Box name="DDOS" imgPath={require('./../images/ddos.png')} className='attack' />
           <Box name="Botnet" imgPath={require('./../images/botnet.png')} className='attack' />
-          
-          
           </div>
+          
+          
           </div>
           
         
