@@ -3,6 +3,7 @@ import './../CtfStyle.css';
 import DDOS from '../Ctf/RED/DDOS';
 import PHISHING from '../Ctf/RED/PHISHING';
 import { animateScroll as scroll } from 'react-scroll';
+import SQLInjection from '../Ctf/RED/SQLInjection';
 
 
 function CtfSelector(props) {
@@ -78,6 +79,9 @@ const ctfSelectorRef = useRef(null);
   return (
     <div id='CTFcontain' className='center' >
       <div ref={ctfSelectorRef} tabIndex={-1}></div>
+      <p>{team}</p>
+      <p>{level}</p>
+      <p>{name}</p>
       <p>{team}</p>
       <p>{level}</p>
       <p>{name}</p>
