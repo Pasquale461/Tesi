@@ -42,9 +42,9 @@ function Ctfs() {
 
       <div id='ctf'>
         <div>
-          <h2 className='titolo center words' style={{fontSize : '60px'}}>Benvenuti nel nostro Configuratore CTF per la Smart City!</h2>
+          <h2 className='titolo center words' style={{fontSize : '60px'}}>Benvenuti nel nostro Configuratore CTF per la Smart City!</h2><br></br>
 
-          <p className='testo center words'>
+          <p className='testo center words' style={{fontSize : '30px'}}>
             Viaggiate in una Smart City virtuale e mettete alla prova le vostre abilità di <br></br>
              sicurezza informatica come mai prima d'ora. Il nostro configuratore CTF offre<br></br>
               ben 45 livelli di sfide che richiedono la vostra astuzia, creatività e abilità<br></br>
@@ -55,7 +55,7 @@ function Ctfs() {
                <br></br>Una volta fatto segui i passaggi della cyber killchain
                <br></br>Divertiti a giocare con le nostre CTF!
 </p>
-
+<br></br>
           <label class="switch-button" for="switch">
           <p id='blue'>BLUE</p>
             <div class="switch-outer">
