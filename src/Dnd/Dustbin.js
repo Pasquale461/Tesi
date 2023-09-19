@@ -3,10 +3,12 @@ import { ItemTypes } from './ItemTypes.js'
 import './../App.css';
 import './../Ctfs.css';
 export const Dustbin = function Dustbin({ level, onNameAfterDrop }) {
+  {console.log(level)}
   const [{ canDrop, isOver }, drop] = useDrop(() => ({
     accept: ItemTypes.BOX,
     drop: (item) => {
       onNameAfterDrop(item.name);
+      {console.log(item.name)}
       return { name: 'Smart City' };},
     collect: (monitor) => ({
       isOver: monitor.isOver(),
@@ -16,7 +18,7 @@ export const Dustbin = function Dustbin({ level, onNameAfterDrop }) {
   const isActive = canDrop && isOver
   switch (level)
   {
-    case '1':
+    case 1:
       return (
         <div id='levels'>
           <h1>Livello</h1>
@@ -26,7 +28,7 @@ export const Dustbin = function Dustbin({ level, onNameAfterDrop }) {
         </div>
         
       )
-      case '2':
+      case 2:
       return (
         <div id='levels'>
           <h1>Livello</h1>
@@ -35,7 +37,7 @@ export const Dustbin = function Dustbin({ level, onNameAfterDrop }) {
         <h1 className='texthide'>{isActive ? 'Release to drop' : 'Drag item in layer'}</h1>        </div>
         
       )
-      case '3':
+      case 3:
       return (
         <div id='levels'>
           <h1>Livello</h1>
@@ -44,7 +46,7 @@ export const Dustbin = function Dustbin({ level, onNameAfterDrop }) {
         <h1 className='texthide'>{isActive ? 'Release to drop' : 'Drag item in layer'}</h1>        </div>
         
       )
-      case '4':
+      case 4:
       return (
         <div id='levels'>
           <h1>Livello</h1>

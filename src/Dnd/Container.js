@@ -1,97 +1,109 @@
 import { memo } from 'react'
 import { Box } from './Box.js'
 import { Dustbin } from './Dustbin.js'
+import React, { useRef , useEffect , useState } from 'react';
 import Hacker from '../images/hacker.png'
 import './../Ctfs.css';
-export const Container = memo(function Container({ level, name, onNameAfterDrop }) {
+export const Container = memo(function Container({ level, onNameAfterDrop }) {
   
-  switch (level) {
-    case '1':
-      return (
+  const destroy = useRef(null);
 
-        <div id='flex'>
-          
-            <Dustbin level='1' onNameAfterDrop={onNameAfterDrop}/>
-          
-          <div id = 'elements'>
-          <Box name="SQL Injection"  imgPath={require('./../images/sqlinj.png')} />
-          <Box name="DDOS" imgPath={require('./../images/ddos.png')} className='attack' />
-          <Box name="Botnet" imgPath={require('./../images/botnet.png')} className='attack' />
-          </div>
-          
-          
-          </div>
-          
-        
-      )
-     
-      case '2':
-        return (
-          <div id='flex'>
-          <div style={{ clear: 'both' }}>
-            <Dustbin level='2'/>
-          </div >
-          <div id = 'elements'>
-          <Box name="SQL Injection"  imgPath={require('./../images/sqlinj.png')} />
-          <Box name="DDOS" imgPath={require('./../images/ddos.png')} className='attack' />
-          <Box name="Xss" imgPath={require('./../images/xss.png')} className='attack' />
-          
-          
-          </div>
-          </div>
-        )
+  const [key, setKey] = useState(null);
+
+  useEffect(() => {
+    // Verifica se l'elemento esiste
+    if (destroy.current) {
+      // Rimuovi l'elemento dal DOM
       
-        case '3':
+    }
+
+    // Genera una nuova chiave per il riferimento per forzare il suo ri-rendering
+    setKey((prevKey) => prevKey + 1);
+  }, [level]);
+
+  switch (level) {
+    case 1:
       return (
 
-        <div id='flex'>
-        <div style={{ clear: 'both' }}>
-          <Dustbin level='3'/>
-        </div >
-        <div id = 'elements'>
-        <Box name="SQL Injection"  imgPath={require('./../images/sqlinj.png')} />
-        <Box name="DDOS" imgPath={require('./../images/ddos.png')} className='attack' />
-        <Box name="Phishing" imgPath={require('./../images/phishing.png')} className='attack' />
+        <div id='flex' >
+          
+          <Dustbin level={1} onNameAfterDrop={onNameAfterDrop} />
+          <div id='elements'ref={destroy} key={key}>
+            <Box name="SQL " imgPath={require('./../images/sqlinj.png')}/>
+            <Box name="DDOdsfdsfS" imgPath={require('./../images/ddos.png')} className='attack' />
+            <Box name="dsfsdfsdf" imgPath={require('./../images/botnet.png')} className='attack' />
+          </div>
+          
+        </div>
         
         
-        </div>
-        </div>
-      )
+      );
      
-      case '4':
-      return (
-
-        <div id='flex'>
-          <div style={{ clear: 'both' }}>
-            <Dustbin level='4'/>
-          </div >
-          <div id = 'elements'>
+      case 2:
+        return (
+          <div id='flex' >
+          
+            <Dustbin level={2} onNameAfterDrop={onNameAfterDrop}/>
+          
+          <div id = 'elements' ref={destroy} key={key}>
           <Box name="SQL Injection"  imgPath={require('./../images/sqlinj.png')} />
           <Box name="DDOS" imgPath={require('./../images/ddos.png')} className='attack' />
           <Box name="Botnet" imgPath={require('./../images/botnet.png')} className='attack' />
+          </div>
+          
+          
+          </div>
+        );
+      
+        case 3:
+      return (
 
+        <div id='flex' >
           
+        <Dustbin level={3} onNameAfterDrop={onNameAfterDrop}/>
+      
+      <div id = 'elements' ref={destroy} key={key}> 
+      <Box name="SQL Injection"  imgPath={require('./../images/sqlinj.png')} />
+      <Box name="DDOS" imgPath={require('./../images/ddos.png')} className='attack' />
+      <Box name="Botnet" imgPath={require('./../images/botnet.png')} className='attack' />
+      </div>
+      
+      
+      </div>
+      );
+     
+      case 4:
+      return (
+
+        <div id='flex'>
           
-          </div>
-          </div>
-      )
+        <Dustbin level={4} onNameAfterDrop={onNameAfterDrop}/>
+      
+      <div id = 'elements' ref={destroy} key={key}>
+      <Box name="SQL_INJECTION"  imgPath={require('./../images/sqlinj.png')} />
+      <Box name="DDOS" imgPath={require('./../images/ddos.png')} className='attack' />
+  
+      </div>
+      
+      
+      </div>
+      );
      
     default:
       return (
 
         <div id='flex'>
-          <div style={{ clear: 'both' }}>
-            <Dustbin level='5'/>
-          </div >
-          <div id = 'elements'>
-          <Box name="SQL Injection"  imgPath={require('./../images/sqlinj.png')} />
-          <Box name="DDOS" imgPath={require('./../images/ddos.png')} className='attack' />
-          <Box name="Xss" imgPath={require('./../images/xss.png')} className='attack' />
+          
+            <Dustbin level='5' onNameAfterDrop={onNameAfterDrop}/>
+          
+         
+          </div>
           
           
-          </div>
-          </div>
-      )
+          
+      );
+
+      
   }
  
 })

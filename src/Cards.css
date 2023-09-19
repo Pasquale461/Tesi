@@ -2,6 +2,7 @@
 
   
   .tariffCards {
+   
     width: 20%;
     margin-right: 10%;
     user-select: none;
@@ -18,10 +19,11 @@
       border-radius: 100%;
       background-image: radial-gradient(rgba(34, 50, 84, 0.04), rgba(34, 50, 84, 0)); }
     .tariffCards > div {
+      width: 140%;
         
       position: relative;
       
-      height: 12pc;
+      height: 15pc;
       border-radius: 12px;
       color: white;
       transform: rotateX(45deg) rotateY(-15deg) rotate(45deg);

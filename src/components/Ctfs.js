@@ -30,6 +30,7 @@ function Ctfs() {
   };
   // Funzione per impostare il nome dopo il drag and drop
   const handleNameAfterDrop = (name) => {
+   
     setNameAfterDrop(name);
   };
 
@@ -78,7 +79,7 @@ function Ctfs() {
         <div id='griglia' className='container'>
         <DndProvider backend={HTML5Backend}>
         <Cards miaVariabile={miaVariabile} impostaVariabile={impostaVariabile} />
-        <Container level={miaVariabile.toString()} onNameAfterDrop={handleNameAfterDrop} />
+        <Container level={miaVariabile} onNameAfterDrop={handleNameAfterDrop} />
          
         </DndProvider>
         </div>

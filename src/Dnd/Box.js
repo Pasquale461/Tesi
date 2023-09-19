@@ -6,7 +6,7 @@ const style = {
   
  
 }
-export const Box = function Box({ name, imgPath }) { // Aggiungi imgPath come parametro
+export const Box = function Box({ name, imgPath , nameAfterDrop  }) { // Aggiungi imgPath come parametro
    // Utilizza imgPath come argomento per require
 
   const [{ isDragging }, drag] = useDrag(() => ({
@@ -14,6 +14,7 @@ export const Box = function Box({ name, imgPath }) { // Aggiungi imgPath come pa
     item: { name },
     end: (item, monitor) => {
       if (monitor.didDrop()) {
+        console.log(name)
         //
       }
     },
@@ -23,11 +24,11 @@ export const Box = function Box({ name, imgPath }) { // Aggiungi imgPath come pa
     }),
   }));
 
-  const opacity = isDragging ? 0.4 : 1;
+  const opacity = isDragging ? 0.1 : 1;
   
   return (
     <div ref={drag} style={{ ...style, opacity }} data-testid={`box`} className='card'>
-      <img src={imgPath} alt={name} className='attack'/>
+      <img src={imgPath} name = {nameAfterDrop || name} alt={name} className='attack'/>
       {/*<p id='element'>{name}</p>*/}
     </div>
   );
