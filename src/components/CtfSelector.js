@@ -14,7 +14,7 @@ function CtfSelector(props) {
     red: {
       '1': {
         DDOS: <DDOS />,
-        SQL_INJECTION : <div></div> 
+        PHISHING: <div></div> 
       },
       '2': {
         DDOS: <DDOS />,
@@ -25,7 +25,7 @@ function CtfSelector(props) {
         SQL_INJECTION : <div></div> 
       },
       '4': {
-        DDOS: <PHISHING />,
+        PHISHING: <PHISHING />,
         SQL_INJECTION : <div></div> 
       },
     },
@@ -78,6 +78,9 @@ const ctfSelectorRef = useRef(null);
   return (
     <div id='CTFcontain' className='center' >
       <div ref={ctfSelectorRef} tabIndex={-1}></div>
+      <p>{team}</p>
+      <p>{level}</p>
+      <p>{name}</p>
       {selectedComponent}
     </div>
   );

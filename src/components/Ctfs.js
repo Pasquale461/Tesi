@@ -10,7 +10,7 @@ import Cards from './Cards';
 import CtfSelector from './CtfSelector';
 
 function Ctfs() {
-  const [miaVariabile, setMiaVariabile] = useState(1);
+  const [miaVariabile, setMiaVariabile] = useState(4);
   const [nameAfterDrop, setNameAfterDrop] = useState(null);
   const [isCheckboxEnabled, setIsCheckboxEnabled] = useState(true);
 

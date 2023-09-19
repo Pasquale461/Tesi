@@ -27,7 +27,7 @@ export const Box = function Box({ name, imgPath }) { // Aggiungi imgPath come pa
   
   return (
     <div ref={drag} style={{ ...style, opacity }} data-testid={`box`} className='card'>
-      <img src={imgPath} alt={name} className='attack'/>
+      <img src={imgPath} name={name} alt={name} className='attack'/>
       {/*<p id='element'>{name}</p>*/}
     </div>
   );
