@@ -69,7 +69,7 @@ export const Container = memo(function Container({ level, name, onNameAfterDrop 
         </div >
         <div id = 'elements' ref={destroy} key={key}>
         <Box name="SQL Injection"  imgPath={require('./../images/sqlinj.png')} className='attack'/>
-        <Box name="DDOS" imgPath={require('./../images/ddos.png')} className='attack' />
+        <Box name="DATA FLOODING" imgPath={require('./../images/flooding.png')} className='attack' />
      
         </div>
         </div>

@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import './../CtfStyle.css';
 import DDOS from '../Ctf/RED/DDOS';
 import PHISHING from '../Ctf/RED/PHISHING';
+import FLOODING from '../Ctf/RED/FLOODING';
 import { animateScroll as scroll } from 'react-scroll';
 import SQLInjection from '../Ctf/RED/SQLInjection';
 
@@ -22,7 +23,7 @@ function CtfSelector(props) {
         SQL_INJECTION : <div></div> 
       },
       '3': {
-        DDOS: <DDOS />,
+        "DATA FLOODING": <FLOODING />,
         SQL_INJECTION : <div></div> 
       },
       '4': {
