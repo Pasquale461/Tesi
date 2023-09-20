@@ -3,6 +3,7 @@ import React from 'react';
 import { ItemTypes } from './ItemTypes.js'
 import './../Ctfs.css';
 import Popover from '@mui/material/Popover';
+import Typography from '@mui/material/Typography';
 const style = {
   
  
@@ -50,22 +51,25 @@ export const Box = function Box({ name, imgPath , nameAfterDrop  }) { // Aggiung
     onMouseLeave={handlePopoverClose}>
       <img src={imgPath} name={name} alt={name} className='attack'/>
       <Popover
-                      sx={{
-                        pointerEvents: 'none',
-                      }}
-                      open={open}
-                      anchorEl={anchorEl}
-                      anchorOrigin={{
-                        vertical: 'center',
-                        horizontal: 'right',
-                      }}
-                      transformOrigin={{
-                        vertical: 'top',
-                        horizontal: 'left',
-                      }}
-                    >
-                      <p className='popup' sx={{ p: 1 }}>{name}</p>
-                    </Popover>
+        id="mouse-over-popover"
+        sx={{
+          pointerEvents: 'none',
+        }}
+        open={open}
+        anchorEl={anchorEl}
+        anchorOrigin={{
+          vertical: 'center',
+          horizontal: 'right',
+        }}
+        transformOrigin={{
+          vertical: 'top',
+          horizontal: 'left',
+        }}
+        onClose={handlePopoverClose}
+        disableRestoreFocus
+      >
+        <Typography sx={{ p: 2 , backgroundColor : 'black' }}>{name}</Typography>
+      </Popover>
       {/*<p id='element'>{name}</p>*/}
     </div>
   );
