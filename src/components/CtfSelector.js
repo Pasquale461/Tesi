@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import './../CtfStyle.css';
 import DDOS from '../Ctf/RED/DDOS';
 import PHISHING from '../Ctf/RED/PHISHING';
+import DDOS_B from '../Ctf/BLUE/DDOS_B';
 import { animateScroll as scroll } from 'react-scroll';
 import SQLInjection from '../Ctf/RED/SQLInjection';
 
@@ -32,7 +33,7 @@ function CtfSelector(props) {
     },
       blue: {
         '1': {
-          DDOS: <DDOS />,
+          DDOS: <DDOS_B />,
           SQL_INJECTION : <div></div> 
         },
         '2': {
@@ -79,6 +80,9 @@ const ctfSelectorRef = useRef(null);
   return (
     <div id='CTFcontain' className='center' >
       <div ref={ctfSelectorRef} tabIndex={-1}></div>
+      <p>{team}</p>
+      <p>{level}</p>
+      <p>{name}</p>
       <p>{team}</p>
       <p>{level}</p>
       <p>{name}</p>

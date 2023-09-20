@@ -28,7 +28,6 @@ function Home() {
         <ParallaxLayer offset={0.9999} speed={1}>
        
           <TextBlock/>
-          
           <Link to="Ctfs">
           <img src={require('../images/hacker.png')} id='hacker' className='center'></img>
          </Link>
