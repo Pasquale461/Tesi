@@ -4,6 +4,8 @@ import DDOS from '../Ctf/RED/DDOS';
 import PHISHING from '../Ctf/RED/PHISHING';
 import { animateScroll as scroll } from 'react-scroll';
 import SQLInjection from '../Ctf/RED/SQLInjection';
+import SPOOFING from '../Ctf/RED/SPOOFING';
+import FIRMWARE from '../Ctf/RED/FIRMWARE';
 
 
 function CtfSelector(props) {
@@ -18,8 +20,8 @@ function CtfSelector(props) {
         PHISHING: <div></div> 
       },
       '2': {
-        DDOS: <DDOS />,
-        SQL_INJECTION : <div></div> 
+        SPOOFING: <SPOOFING/>,
+        'FIRMWARE ATTACK' : <FIRMWARE/> 
       },
       '3': {
         DDOS: <DDOS />,
