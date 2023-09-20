@@ -82,9 +82,6 @@ const ctfSelectorRef = useRef(null);
       <p>{team}</p>
       <p>{level}</p>
       <p>{name}</p>
-      <p>{team}</p>
-      <p>{level}</p>
-      <p>{name}</p>
       {selectedComponent}
     </div>
   );

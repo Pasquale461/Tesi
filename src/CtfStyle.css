@@ -17,9 +17,16 @@ div > h2 {
   color: rgb(218, 192, 242) !important
 }
 div > p {
-  color: rgb(255, 212, 253) !important
+  color: rgb(255, 212, 253) !important;
+  font-size: 140%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 3%;
 }
 
+div > img {
+  width: 45%;
+}
 
 
 
