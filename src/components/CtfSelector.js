@@ -27,7 +27,7 @@ function CtfSelector(props) {
       },
       '4': {
         PHISHING: <PHISHING />,
-        SQL_INJECTION : <div></div> 
+        'SQL Injection' : <SQLInjection/>
       },
     },
       blue: {
@@ -79,12 +79,7 @@ const ctfSelectorRef = useRef(null);
   return (
     <div id='CTFcontain' className='center' >
       <div ref={ctfSelectorRef} tabIndex={-1}></div>
-      <p>{team}</p>
-      <p>{level}</p>
-      <p>{name}</p>
-      <p>{team}</p>
-      <p>{level}</p>
-      <p>{name}</p>
+      
       {selectedComponent}
     </div>
   );

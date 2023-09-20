@@ -1,12 +1,16 @@
 import { memo } from 'react'
 import { Box } from './Box.js'
 import { Dustbin } from './Dustbin.js'
+
 import React, { useRef , useEffect , useState } from 'react';
 import Hacker from '../images/hacker.png'
 import './../Ctfs.css';
 export const Container = memo(function Container({ level, name, onNameAfterDrop }) {
   
+
+ 
   const destroy = useRef(null);
+
 
   const [key, setKey] = useState(null);
 
@@ -29,9 +33,12 @@ export const Container = memo(function Container({ level, name, onNameAfterDrop 
           <div style={{ clear: 'both' }}>
             <Dustbin level={1} onNameAfterDrop={onNameAfterDrop}/>
           </div >
-          <div id = 'elements' ref={destroy} key={key}>
-          <Box name="DDOS" imgPath={require('./../images/ddos.png')} className='attack' />
-          <Box name="PHISHING" imgPath={require('./../images/botnet.png')} className='attack' />
+          <div id = 'elements' ref={destroy} key={key} >
+   
+               <Box name="DDOS" imgPath={require('./../images/ddos.png')} className='attack' />
+                    
+   
+          <Box name="Botnet" imgPath={require('./../images/botnet.png')} className='attack' />
          
           </div>
           </div>
