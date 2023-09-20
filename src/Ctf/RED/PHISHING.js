@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../CtfStyle.css';
 function PHISHING () {
 
 return (
@@ -19,12 +20,7 @@ return (
 </clipPath>
 </defs>
 </svg>
-            <p>Gli attaccanti iniziano pianificando l'attacco, selezionando il bersaglio o il gruppo di bersagli e raccogliendo informazioni su di loro.</p>
-            
-
-
-
-
+            <p>Gli attaccanti iniziano pianificando l'attacco, selezionando il bersaglio o il gruppo di bersagli e raccogliendo informazioni su di loro. Cercano di trovare informazioni su che servizi utilizzano, banche, abbonamenti.</p>
         </div>
         <div class="kill-chain-phase">
             <h2>2. Weaponization (Armatizzazione)</h2>
@@ -32,7 +28,7 @@ return (
             <svg width="8%" height="8%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M19 21C19 21.5523 18.5523 22 18 22H14H10H6C5.44771 22 5 21.5523 5 21V18.75C5 17.7835 4.2165 17 3.25 17C2.55964 17 2 16.4404 2 15.75V11C2 5.47715 6.47715 1 12 1C17.5228 1 22 5.47715 22 11V15.75C22 16.4404 21.4404 17 20.75 17C19.7835 17 19 17.7835 19 18.75V21ZM17 20V18.75C17 16.9358 18.2883 15.4225 20 15.075V11C20 6.58172 16.4183 3 12 3C7.58172 3 4 6.58172 4 11V15.075C5.71168 15.4225 7 16.9358 7 18.75V20H9V18C9 17.4477 9.44771 17 10 17C10.5523 17 11 17.4477 11 18V20H13V18C13 17.4477 13.4477 17 14 17C14.5523 17 15 17.4477 15 18V20H17ZM11 12.5C11 13.8807 8.63228 15 7.25248 15C5.98469 15 5.99206 14.055 6.00161 12.8306V12.8305C6.00245 12.7224 6.00331 12.6121 6.00331 12.5C6.00331 11.1193 7.12186 10 8.50166 10C9.88145 10 11 11.1193 11 12.5ZM17.9984 12.8306C17.9975 12.7224 17.9967 12.6121 17.9967 12.5C17.9967 11.1193 16.8781 10 15.4983 10C14.1185 10 13 11.1193 13 12.5C13 13.8807 15.3677 15 16.7475 15C18.0153 15 18.0079 14.055 17.9984 12.8306Z" fill="#000000"/>
 </svg>
-            <p>Gli attaccanti creano un'email di phishing che sembra autentica, utilizzando spesso tattiche come il "spoofing" dell'indirizzo email del mittente o la creazione di un sito web falso per supportare l'inganno.</p>
+            <p>Gli attaccanti creano un'email di phishing che sembra autentica, utilizzando spesso tattiche come il "spoofing" dell'indirizzo email del mittente o la creazione di un sito web falso per supportare l'inganno. Ci sono diversi tool linux che permettono questo.</p>
         </div>
         <div class="kill-chain-phase">
             <h2>3. Delivery (Consegna)</h2>
@@ -42,21 +38,24 @@ return (
 </svg>
 
 
-            <p>L'email di phishing viene inviata alle vittime selezionate. Gli attaccanti possono utilizzare varie tecniche per indurre le vittime a interagire con l'email, come il linguaggio di paura, l'offerta di incentivi o l'uso di informazioni personali precedentemente raccolte.</p>
+            <p>L'email di phishing viene inviata alle vittime selezionate. Gli attaccanti possono utilizzare varie tecniche per indurre le vittime a interagire con l'email, come il linguaggio di paura, l'offerta di incentivi o l'uso di informazioni personali precedentemente raccolte. Qui c'è la richiesta di aggiornamento obbligatorio del profilo, che se non eseguita la vittima non avrebbe accesso a nessun servizio.</p>
+            <img src={require('../../images/FakeMail.jpg')}/> 
         </div>
+        
         <div class="kill-chain-phase">
             <h2>4. Exploitation (Sfruttamento)</h2>
 
             <svg fill="#000000" width="8%" height="8%" viewBox="0 0 64 64" data-name="Material Expand" id="Material_Expand" xmlns="http://www.w3.org/2000/svg"><path d="M6.188,52.173A2,2,0,0,0,5,54v8H9V55.3l6.992-3.108a17.968,17.968,0,0,0,32.016,0L55,55.3V62h4V54a2,2,0,0,0-1.188-1.827l-8.39-3.729a17.858,17.858,0,0,0,.511-3.115l7.879-3.5A2,2,0,0,0,59,40V32H55v6.7l-5,2.223V30.3l7.812-3.472A2,2,0,0,0,59,25V17H55v6.7l-5.325,2.367A6.006,6.006,0,0,0,44,22H42V18a7.941,7.941,0,0,0-.99-3.847l3.239-2.591A2,2,0,0,0,45,10V5H41V9.039l-2.747,2.2A7.939,7.939,0,0,0,34,10H30a7.939,7.939,0,0,0-4.253,1.237L23,9.039V5H19v5a2,2,0,0,0,.751,1.562l3.239,2.591A7.941,7.941,0,0,0,22,18v4H20a6.006,6.006,0,0,0-5.675,4.067L9,23.7V17H5v8a2,2,0,0,0,1.188,1.827L14,30.3V40.923L9,38.7V32H5v8a2,2,0,0,0,1.188,1.827l7.879,3.5a17.858,17.858,0,0,0,.511,3.115ZM18,44V34H30V57.84A14.009,14.009,0,0,1,18,44ZM34,57.84V34H46V44A14.009,14.009,0,0,1,34,57.84ZM26,18a4,4,0,0,1,4-4h4a4,4,0,0,1,4,4v4H26Zm-6,8H44a2,2,0,0,1,2,2v2H18V28A2,2,0,0,1,20,26Z"/></svg>
             
-            <p>Le vittime ricevono e aprono l'email di phishing. Gli attaccanti cercano di convincere le vittime a compiere azioni specifiche, come fare clic su link malevoli o scaricare allegati dannosi.</p>
+            <p>Le vittime ricevono e aprono l'email di phishing. Gli attaccanti cercano di convincere le vittime a compiere azioni specifiche, come fare clic su link malevoli o scaricare allegati dannosi. Sito quasi identico, con la presenza anche di numeri di emergenza e assistenza.</p>
+            <img src={require('../../images/FakeSite.png')}/> 
         </div>
         <div class="kill-chain-phase">
             <h2>5. Installation (Installazione)</h2>
             <svg width="8%" height="8%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M17 17H17.01M17.4 14H18C18.9319 14 19.3978 14 19.7654 14.1522C20.2554 14.3552 20.6448 14.7446 20.8478 15.2346C21 15.6022 21 16.0681 21 17C21 17.9319 21 18.3978 20.8478 18.7654C20.6448 19.2554 20.2554 19.6448 19.7654 19.8478C19.3978 20 18.9319 20 18 20H6C5.06812 20 4.60218 20 4.23463 19.8478C3.74458 19.6448 3.35523 19.2554 3.15224 18.7654C3 18.3978 3 17.9319 3 17C3 16.0681 3 15.6022 3.15224 15.2346C3.35523 14.7446 3.74458 14.3552 4.23463 14.1522C4.60218 14 5.06812 14 6 14H6.6M12 15V4M12 15L9 12M12 15L15 12" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
-            <p>Gli attaccanti sfruttano l'interazione delle vittime per ottenere l'accesso a informazioni sensibili o per installare malware sul sistema della vittima.</p>
+            <p>Gli attaccanti sfruttano l'interazione delle vittime per ottenere l'accesso a informazioni sensibili o per installare malware sul sistema della vittima.<br></br>Così facendo hanno accesso permanente al sito.</p>
         </div>
         <div class="kill-chain-phase">
             <h2>6. Command and Control (Comando e Controllo)</h2>
@@ -76,7 +75,7 @@ return (
   </g>
 </svg>
 
-            <p>Una volta all'interno del sistema della vittima, gli attaccanti cercano di mantenere l'accesso e di spostarsi all'interno della rete per ottenere ulteriori informazioni o estendere l'attacco.</p>
+            <p>Una volta all'interno del sistema della vittima, gli attaccanti cercano di mantenere l'accesso e di spostarsi all'interno della rete per ottenere ulteriori informazioni o estendere l'attacco. Con le credenziali appena rubate l'attacco può estendersi ad altri portali o con la navigazione all'interno del portale appena "rubato" con la possibilità di compiere molteplici operazioni.</p>
         </div>
         <div class="kill-chain-phase">
             <h2>7. Actions on Objectives (Azioni sugli Obiettivi)</h2>
