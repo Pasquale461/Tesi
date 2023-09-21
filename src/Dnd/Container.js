@@ -68,7 +68,7 @@ export const Container = memo(function Container({ level, name, onNameAfterDrop 
           <Dustbin level={3} onNameAfterDrop={onNameAfterDrop}/>
         </div >
         <div id = 'elements' ref={destroy} key={key}>
-        <Box name="SQL Injection"  imgPath={require('./../images/sqlinj.png')} className='attack'/>
+        <Box name="CODE INJECTION"  imgPath={require('./../images/CodeInjection.png')} className='attack'/>
         <Box name="DATA FLOODING" imgPath={require('./../images/flooding.png')} className='attack' />
      
         </div>

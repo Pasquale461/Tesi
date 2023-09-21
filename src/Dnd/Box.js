@@ -9,13 +9,6 @@ const style = {
  
 }
 
-
-
-
-
-
-
-
 export const Box = function Box({ name, imgPath , nameAfterDrop  }) { // Aggiungi imgPath come parametro
    // Utilizza imgPath come argomento per require
 
