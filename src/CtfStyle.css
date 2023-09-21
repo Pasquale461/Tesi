@@ -29,7 +29,11 @@ div > img {
   border-radius: 4%;
 }
 
-
+.title {
+  color: rgb(213, 169, 255) !important;
+  padding: 5%;
+  font-size: xxx-large;
+}
 
 .center{
     text-align: center;

@@ -4,7 +4,7 @@ function PHISHING () {
 
 return (
         <div id="cyber-kill-chain">
-        <h1>Fasi della Cyber Kill Chain</h1>
+        <h1 className='title'>Fasi della Cyber Kill Chain</h1>
         <div class="kill-chain-phase">
             <h2>1. Reconnaissance (Ricerca)</h2>
 

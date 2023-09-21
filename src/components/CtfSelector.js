@@ -35,19 +35,19 @@ function CtfSelector(props) {
     },
       blue: {
         '1': {
-          DDOS: <DDOS />,
+          DDOS: <span></span>,
           SQL_INJECTION : <div></div> 
         },
         '2': {
-          DDOS: <DDOS />,
+          DDOS: <span></span>,
           SQL_INJECTION : <div></div> 
         },
         '3': {
-          DDOS: <DDOS />,
+          DDOS: <span></span>,
           SQL_INJECTION : <div></div> 
         },
         '4': {
-          DDOS: <DDOS />,
+          DDOS: <span></span>,
           SQL_INJECTION : <div></div> 
         }
       
