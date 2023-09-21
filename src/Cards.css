@@ -2,8 +2,10 @@
 
   
   .tariffCards {
-   
-    width: 20%;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    width: 30%;
     margin-right: 10%;
     user-select: none;
     transform: translate3d(0, 0, 0);
@@ -19,11 +21,12 @@
       border-radius: 100%;
       background-image: radial-gradient(rgba(34, 50, 84, 0.04), rgba(34, 50, 84, 0)); }
     .tariffCards > div {
-      width: 140%;
-        
+      width: 100%;
+      margin: 1%;
       position: relative;
       
-      height: 15pc;
+      scale: 1.4;
+      height: 11pc;
       border-radius: 12px;
       color: white;
       transform: rotateX(45deg) rotateY(-15deg) rotate(45deg);
@@ -46,14 +49,14 @@
         position: absolute;
         bottom: 28px;
         left: 15px;
-        font-size: 35px;
+        font-size: 30px;
         font-weight: 800; }
       .tariffCards > div span {
         position: absolute;
         font-weight: 700;
         bottom: 15px;
         left: 15px;
-        font-size: 25px;
+        font-size: 20px;
         font-weight: 600;
         opacity: .8; }
         .tariffCards > div.economy {
