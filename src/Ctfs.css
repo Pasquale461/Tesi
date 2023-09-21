@@ -11,7 +11,12 @@
 {
   margin: 5%;
 }
-
+#anim{
+  position: relative;
+  border-radius: 50px;
+  overflow: hidden;
+  padding-bottom: -10;
+}
 
 #griglia
 {

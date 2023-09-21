@@ -5,16 +5,22 @@ import animationCity from '../Animations/city.json';
 
 function AnimateWalking() {
   const style = {
-    height: 50,
-    whith: 50,
+    height: 220,
+    whith: 220,
+    position: 'absolute',
+    left: '20%',
+    top: '45%',
+    zIndex: 2,
   };
   const styleC = {
-    height: 900,
+    height: '100%',
     whith: 350,
+    zIndex: 1,
+    display: 'flex',
   };
 
   return (
-    <div>
+    <div id='anim'>
       <Lottie
         animationData={animationWalk}
         style={style}
