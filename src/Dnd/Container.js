@@ -53,8 +53,8 @@ export const Container = memo(function Container({ level, name, onNameAfterDrop 
             <Dustbin level={2} onNameAfterDrop={onNameAfterDrop}/>
           </div >
           <div id = 'elements' ref={destroy} key={key}>
-          <Box name="SQL Injection"  imgPath={require('./../images/sqlinj.png')} className='attack'/>
-          <Box name="DDOS" imgPath={require('./../images/ddos.png')} className='attack' />
+          <Box name="SPOOFING"  imgPath={require('./../images/spoofing.png')} className='attack'/>
+          <Box name="FIRMWARE ATTACK" imgPath={require('./../images/firmware.png')} className='attack' />
   
           </div>
           </div>
@@ -68,8 +68,8 @@ export const Container = memo(function Container({ level, name, onNameAfterDrop 
           <Dustbin level={3} onNameAfterDrop={onNameAfterDrop}/>
         </div >
         <div id = 'elements' ref={destroy} key={key}>
-        <Box name="SQL Injection"  imgPath={require('./../images/sqlinj.png')} className='attack'/>
-        <Box name="DDOS" imgPath={require('./../images/ddos.png')} className='attack' />
+        <Box name="CODE INJECTION"  imgPath={require('./../images/CodeInjection.png')} className='attack'/>
+        <Box name="DATA FLOODING" imgPath={require('./../images/flooding.png')} className='attack' />
      
         </div>
         </div>

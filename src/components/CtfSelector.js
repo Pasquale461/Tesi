@@ -4,7 +4,11 @@ import DDOS from '../Ctf/RED/DDOS';
 import PHISHING from '../Ctf/RED/PHISHING';
 import DDOS_B from '../Ctf/BLUE/DDOS_B';
 import { animateScroll as scroll } from 'react-scroll';
+import FLOODING from '../Ctf/RED/FLOODING';
 import SQLInjection from '../Ctf/RED/SQLInjection';
+import SPOOFING from '../Ctf/RED/SPOOFING';
+import FIRMWARE from '../Ctf/RED/FIRMWARE';
+import CODEINJECTION from '../Ctf/RED/CODEINJECTION';
 
 
 function CtfSelector(props) {
@@ -19,12 +23,12 @@ function CtfSelector(props) {
         PHISHING: <div></div> 
       },
       '2': {
-        DDOS: <DDOS />,
-        SQL_INJECTION : <div></div> 
+        SPOOFING: <SPOOFING/>,
+        'FIRMWARE ATTACK' : <FIRMWARE/> 
       },
       '3': {
-        DDOS: <DDOS />,
-        SQL_INJECTION : <div></div> 
+        "DATA FLOODING": <FLOODING />,
+        "CODE INJECTION" : <CODEINJECTION/> 
       },
       '4': {
         PHISHING: <PHISHING />,
@@ -37,15 +41,15 @@ function CtfSelector(props) {
           SQL_INJECTION : <div></div> 
         },
         '2': {
-          DDOS: <DDOS />,
+          DDOS: <span></span>,
           SQL_INJECTION : <div></div> 
         },
         '3': {
-          DDOS: <DDOS />,
+          DDOS: <span></span>,
           SQL_INJECTION : <div></div> 
         },
         '4': {
-          DDOS: <DDOS />,
+          DDOS: <span></span>,
           SQL_INJECTION : <div></div> 
         }
       
