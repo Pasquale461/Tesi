@@ -7,8 +7,8 @@ const Footer = () => {
       <br></br><br></br><br></br><br></br><br></br>
     <footer className="footer">
       <div className="footer-content">
-        <p>&copy; 2023 Hacker's Playground</p>
-        <p>Contact: <a href="mailto:info@hackersplayground.com">info@hackersplayground.com</a></p>
+        <p><b>TESI DI:</b></p>
+        <p>Manfredi Pasquale, Moramarco Giuseppe, Shaba Ardit</p>
       </div>
     </footer>
     </div>
