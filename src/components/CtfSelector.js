@@ -7,6 +7,7 @@ import { animateScroll as scroll } from 'react-scroll';
 import SQLInjection from '../Ctf/RED/SQLInjection';
 import SPOOFING from '../Ctf/RED/SPOOFING';
 import FIRMWARE from '../Ctf/RED/FIRMWARE';
+import CODEINJECTION from '../Ctf/RED/CODEINJECTION';
 
 
 function CtfSelector(props) {
@@ -26,7 +27,7 @@ function CtfSelector(props) {
       },
       '3': {
         "DATA FLOODING": <FLOODING />,
-        SQL_INJECTION : <div></div> 
+        "CODE INJECTION" : <CODEINJECTION/> 
       },
       '4': {
         PHISHING: <PHISHING />,
