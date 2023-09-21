@@ -22,7 +22,7 @@ export const Dustbin = function Dustbin({ level, onNameAfterDrop }) {
       return (
         <div id='levels'>
           <h1  className='center'>Infrastruttura e reti</h1>
-          <h3  className='center'>fornisce le basi per la trasformazione in una città intelligente, consentendo la raccolta e la gestione dei dati nelle infrastrutture opportune.</h3>
+          <h3  className='center'>Fornisce le basi per la trasformazione in una città intelligente, consentendo la raccolta e la gestione dei dati nelle infrastrutture opportune.</h3>
         <img src={require('../images/livello1.png')} id='imagelayers' ref={drop} data-testid="dustbin" className='image center'/>
         <h1 className='texthide center'>{isActive ? 'Rilascia per attaccare' : 'Trascina l\'attacco qui'}</h1>        </div>
         
@@ -41,7 +41,7 @@ export const Dustbin = function Dustbin({ level, onNameAfterDrop }) {
       return (
         <div id='levels'>
           <h1 className='center'>Service delivery platform</h1>
-          <h3 className='center'> svolge un ruolo cruciale nell'ottimizzazione dei servizi in una città intelligente attraverso l'analisi dei dati territoriali.</h3>
+          <h3 className='center'>Svolge un ruolo cruciale nell'ottimizzazione dei servizi in una città intelligente attraverso l'analisi dei dati territoriali.</h3>
         <img src={require('../images/livello3.png')} id='imagelayers' ref={drop} data-testid="dustbin" className='image center'/>
         <h1 className='texthide center'>{isActive ? 'Rilascia per attaccare' : 'Trascina l\'attacco qui'}</h1>        
               </div>

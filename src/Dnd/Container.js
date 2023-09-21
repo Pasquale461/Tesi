@@ -38,7 +38,7 @@ export const Container = memo(function Container({ level, name, onNameAfterDrop 
                <Box name="DDOS" imgPath={require('./../images/ddos.png')} className='attack' />
                     
    
-          <Box name="Botnet" imgPath={require('./../images/botnet.png')} className='attack' />
+          <Box name="RAMSOWARE" imgPath={require('./../images/ramsoware.png')} className='attack' />
          
           </div>
           </div>
