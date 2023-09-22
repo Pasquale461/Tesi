@@ -9,6 +9,7 @@ import SQLInjection from '../Ctf/RED/SQLInjection';
 import SPOOFING from '../Ctf/RED/SPOOFING';
 import FIRMWARE from '../Ctf/RED/FIRMWARE';
 import CODEINJECTION from '../Ctf/RED/CODEINJECTION';
+import RAMSOWARE from '../Ctf/RED/RAMSOWARE';
 import AnimateWalking from '../components/Animation'
 
 
@@ -21,7 +22,7 @@ function CtfSelector(props) {
     red: {
       '1': {
         DDOS: <DDOS />,
-        PHISHING: <div></div> 
+        RAMSOWARE: <RAMSOWARE />
       },
       '2': {
         SPOOFING: <SPOOFING/>,
