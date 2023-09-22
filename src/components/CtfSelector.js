@@ -9,6 +9,7 @@ import SQLInjection from '../Ctf/RED/SQLInjection';
 import SPOOFING from '../Ctf/RED/SPOOFING';
 import FIRMWARE from '../Ctf/RED/FIRMWARE';
 import CODEINJECTION from '../Ctf/RED/CODEINJECTION';
+import AnimateWalking from '../components/Animation'
 
 
 function CtfSelector(props) {
@@ -37,7 +38,7 @@ function CtfSelector(props) {
     },
       blue: {
         '1': {
-          DDOS: <DDOS_B />,
+          DDOS: <AnimateWalking type={<DDOS_B/>}/>,
           SQL_INJECTION : <div></div> 
         },
         '2': {
@@ -80,14 +81,23 @@ const ctfSelectorRef = useRef(null);
   useEffect(() => {
     setFocusWithAnimation();
   }, [name]);
-
+  if(team==='red')
   return (
-    <div id='CTFcontain' className='center' >
+    <div id='CTFcontainRed' className='center' >
       <div ref={ctfSelectorRef} tabIndex={-1}></div>
       
       {selectedComponent}
     </div>
   );
+  else
+  return (
+    <div id='CTFcontainBlue' className='center' >
+      <div ref={ctfSelectorRef} tabIndex={-1}></div>
+      
+      {selectedComponent}
+    </div>
+  );
+
 }
 
 export default CtfSelector;
