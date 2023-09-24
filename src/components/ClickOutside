@@ -1,0 +1,26 @@
+import React, { useEffect, useRef } from 'react';
+
+function ClickOutsideDetector({ children, onOutsideClick }) {
+  const wrapperRef = useRef(null);
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {
+        // Click occurred outside of the div
+        onOutsideClick();
+      }
+    }
+
+    // Add event listener to the document
+    document.addEventListener('mousedown', handleClickOutside);
+
+    // Cleanup the event listener when the component unmounts
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [onOutsideClick]);
+
+  return <div ref={wrapperRef}>{children}</div>;
+}
+
+export default ClickOutsideDetector;

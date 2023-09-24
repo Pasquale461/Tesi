@@ -6,7 +6,7 @@ import animationSem from '../Animations/semaforo.json';
 import { motion } from 'framer-motion'
 
 import Backdrop from '@mui/material/Backdrop';
-import CircularProgress from '@mui/material/CircularProgress';
+import { ClickAwayListener } from '@mui/base/ClickAwayListener';
 
 
 function AnimateWalking(modulo) {
@@ -16,6 +16,9 @@ function AnimateWalking(modulo) {
   };
   const handleOpen = () => {
     setOpen(true);
+  };
+  const handleClickAway = () => {
+    setOpen(false);
   };
 
   const style = {
@@ -28,7 +31,7 @@ function AnimateWalking(modulo) {
   };
   const styleC = {
     width: '100%',
-    zIndex: 1,
+    zIndex: '1',
     display: 'flex',
   };
   const styl = {
@@ -37,18 +40,24 @@ function AnimateWalking(modulo) {
     position: 'absolute',
     left: '100%',
     top: '30%',
-    zIndex: 3,
+    zIndex: '3',
   };
   const styleS = {
     height: '100%',
     width: '100%',
   };
+  const cont = {
+    position: 'absolute',
+    height: '100%',
+    width: '100%',
+    zIndex: '0',
+  }
   const anim = {
-      position: 'relative',
-      borderRadius: '50px',
-      overflow: 'hidden',
-      width: '75%',
-      maxHeight: '700px',
+    position: 'relative',
+    borderRadius: '50px',
+    overflow: 'hidden',
+    width: '75%',
+    maxHeight: '700px',
   }
   return (
     <div style={anim}>
@@ -61,6 +70,7 @@ function AnimateWalking(modulo) {
         style={styleC}
       />
       <motion.div style={styl} animate={{ x: '-80%' }} onClick={handleOpen}>
+        {/** immagine o gif in base all'attacco */}
         <Lottie
           animationData={animationSem}
           style={styleS}
@@ -69,8 +79,11 @@ function AnimateWalking(modulo) {
       <Backdrop
         sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
         open={open}
-        onClick={handleClose}
       >
+        <div onClick={handleClose}
+        style={cont}>
+
+        </div>
         {modulo.type}
       </Backdrop>
 
