@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
+import '../../PopupBlue.css';
 
 function SPOOFING_B() {
     const [stat, setStat] = React.useState(false);
@@ -24,17 +25,16 @@ function SPOOFING_B() {
         justifyContent: 'space-evenly',
         alignItems: 'center',
         zIndex: '2',
-        overflowY: 'scroll' 
     };
 
     return (
         <div style={style}>
             <div>
-                <h1>Titolo</h1>
+                <h1>SPOOFING</h1>
                 <p>
-Lo spoofing è un tipo di attacco informatico in cui un aggressore crea falsi segnali, informazioni o identità per ingannare un sistema o un utente. Nella contesto di una città intelligente, uno degli attacchi di spoofing più comuni coinvolge la creazione di un access point Wi-Fi fasullo con un nome (SSID) apparentemente legittimo per attirare le persone a connettersi.
+Lo spoofing crea falsi segnali, informazioni o identità per ingannare un sistema o un utente. Nella contesto di una città intelligente, uno degli attacchi di spoofing più comuni coinvolge la creazione di un access point Wi-Fi fasullo con un nome (SSID) apparentemente legittimo per attirare le persone a connettersi.
 
-Per proteggersi da questo tipo di attacco, è importante essere cauti quando ci si connette a reti Wi-Fi pubbliche e assicurarsi di utilizzare solo reti sicure e attendibili. Evitare di connettersi a reti aperte o non protette, verificare sempre l'autenticità delle reti Wi-Fi e utilizzare una rete privata virtuale (VPN) per cifrare il traffico Internet e proteggere i dati sensibili.O</p>
+È importante essere cauti quando ci si connette a reti Wi-Fi pubbliche e assicurarsi di utilizzare solo reti sicure e attendibili. Evitare di connettersi a reti aperte o non protette, verificare sempre l'autenticità delle reti Wi-Fi e utilizzare una rete privata virtuale (VPN).</p>
             </div>
             <div>
                 <h3>Per proteggersi dall'attacco di spoofing in una rete Wi-Fi, è consigliabile utilizzare ____ </h3>

@@ -34,12 +34,12 @@ function SQLInjection_B() {
                 <p>L'attacco SQL Injection è una minaccia per la sicurezza delle città intelligenti, in quanto permette agli aggressori di accedere a informazioni sensibili dei cittadini attraverso vulnerabilità nei database. Per difendersi, è essenziale validare rigorosamente i dati in ingresso, utilizzare query parametrizzate, implementare un firewall delle applicazioni web e mantenere costantemente aggiornati i sistemi, al fine di proteggere le informazioni critiche.</p>
             </div>
             <div>
-                <h3>Per difendersi da un attacco SQL Injection, è cruciale validare accuratamente __________ per garantire che non contengano comandi dannosi.</h3>
+                <h3>Per difendersi da un attacco SQL Injection, è cruciale utilizzare accuratamente __________ per garantire che non contengano comandi dannosi.</h3>
                 <Stack direction="row" spacing={2} justifyContent="center" alignItems="flex-end">
-                    <Button variant="contained" color={color_1} disabled={stat} onClick={() => setColor_1('error')}> backup automatici</Button>
-                    <Button variant="contained" color={color_2} disabled={stat} onClick={() => setColor_2('error')}>password complesse</Button>
-                    <Button variant="contained" color={color} onClick={handleTrue}>query parametrizzate</Button>
-                    <Button variant="contained" color={color_3} disabled={stat} onClick={() => setColor_3('error')}> firme digitali</Button>
+                    <Button className="btn-custom" variant="contained" color={color_1} disabled={stat} onClick={() => setColor_1('error')}>algoritmi</Button>
+                    <Button className="btn-custom" variant="contained" color={color_2} disabled={stat} onClick={() => setColor_2('error')}>antivirus</Button>
+                    <Button className="btn-custom" variant="contained" color={color} onClick={handleTrue}>filtri</Button>
+                    <Button className="btn-custom" variant="contained" color={color_3} disabled={stat} onClick={() => setColor_3('error')}> firme digitali</Button>
                 </Stack>
             </div>
         </div>
