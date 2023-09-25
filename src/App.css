@@ -104,7 +104,6 @@ body {
   display: flex;
   margin: auto;
   overflow-x: hidden;
-
 }
 
 #Hack {
@@ -135,6 +134,10 @@ body {
 
 #hacker {
   scale: 0.3;
+
+  /* Per il not Hover*/
+  transform: scale(1);
+  transition-duration: 0.5s;
 }
 
 #hacker:hover {
@@ -145,20 +148,9 @@ body {
   transition-duration: 0.5s;
 }
 
-
-
-
-
-
-
-
 .texthide {
   color: #f9fafb;
 }
-
-
-
-
 
 
 #root {
@@ -176,6 +168,7 @@ a {
 
 ::-webkit-scrollbar-thumb {
   background-color: #9e2d91;
+  border-radius: 25px;
 }
 
 ::-webkit-scrollbar-thumb:hover {

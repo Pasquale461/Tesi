@@ -2,11 +2,9 @@ import React from 'react';
 import Lottie from 'lottie-react';
 import animationWalk from '../Animations/walking.json';
 import animationCity from '../Animations/city.json';
-import animationSem from '../Animations/semaforo.json';
 import { motion } from 'framer-motion'
 import Backdrop from '@mui/material/Backdrop';
 import './../Ctfs.css';
-import { ClickAwayListener } from '@mui/base/ClickAwayListener';
 
 
 function AnimateWalking(props) {
@@ -18,13 +16,7 @@ function AnimateWalking(props) {
   const handleOpen = () => {
     setOpen(true);
   };
-  const handleClickAway = () => {
-    setOpen(false);
-  };
-
-  const zoom = {
-   
-  };
+  
 
   const style = {
     height: '30%',
@@ -40,16 +32,17 @@ function AnimateWalking(props) {
     display: 'flex',
   };
   const styl = {
-    height: '40%',
-    width: '40%',
+    height: '30%',
+    width: '30%',
     position: 'absolute',
     left: '100%',
-    top: '30%',
+    top: '60%',
     zIndex: '3',
   };
-  const styleS = {
-    height: '100%',
+  const styleI = {
+    objectFit: 'contain',
     width: '100%',
+    height: '100%',
   };
   const cont = {
     position: 'absolute',
@@ -63,6 +56,11 @@ function AnimateWalking(props) {
     overflow: 'hidden',
     width: '75%',
     maxHeight: '700px',
+    height: '100%',
+  }
+  if(window.innerWidth>1600){
+    styl.top='40%'
+    styleC.marginTop="-35%";
   }
   return (
     <div style={anim}>
@@ -74,9 +72,9 @@ function AnimateWalking(props) {
         animationData={animationCity}
         style={styleC}
       />
-      <motion.div style={styl} animate={{ x: '-80%' , y: '+40%' , width: '70%' }} onClick={handleOpen}>
+      <motion.div style={styl} animate={{ x: '-110%'}} onClick={handleOpen}>
         {/** immagine o gif in base all'attacco */}
-        <img src={imgPath} className='zoom'/>
+        <img src={imgPath} style={styleI} className='zoom'/>
       </motion.div>
       <Backdrop
         sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}

@@ -2,7 +2,7 @@
 .footer {
   background-image: linear-gradient(90deg, rgba(237, 110, 160, 0.83) 17%, rgba(167, 104, 237, 0.76) 63%);
     color: rgb(6, 9, 58); /* Verde fluo */
-    padding: 10px 0;
+    padding: 15px 0;
     text-align: center;
     width: 100%;
     position: sticky;
