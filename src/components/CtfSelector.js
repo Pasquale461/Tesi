@@ -75,16 +75,16 @@ const ctfSelectorRef = useRef(null);
   }, [name]);
   if(team==='red')
   return (
-    <div id='CTFcontainRed' className='center' >
-      <div ref={ctfSelectorRef} tabIndex={-1}></div>
+    <div id='CTFcontainRed' className='center' ref={ctfSelectorRef} tabIndex={-1} >
+     
       
       {selectedComponent}
     </div>
   );
   else
   return (
-    <div id='CTFcontainBlue' className='center' >
-      <div ref={ctfSelectorRef} tabIndex={-1}></div>
+    <div id='CTFcontainBlue' className='center' ref={ctfSelectorRef} tabIndex={-1} >
+      
       
       {selectedComponent}
     </div>

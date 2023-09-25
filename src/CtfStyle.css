@@ -25,9 +25,13 @@ div > h2 {
 }
 div > p {
   color: rgb(255, 212, 253) !important;
-  font-size: 140%;
-  margin-left: 10%;
-  margin-right: 10%;
+  font-size: 25px;
+  margin-bottom: 3%;
+}
+div > b {
+  color: rgb(255, 212, 253) !important;
+  font-size: 30px;
+
   margin-bottom: 3%;
 }
 

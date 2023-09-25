@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
-import '../../PopupBlue.css';
+import './PopupBlue.css';
 
 function SQLInjection_B() {
     const [stat, setStat] = React.useState(false);
