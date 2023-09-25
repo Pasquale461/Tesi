@@ -57,7 +57,7 @@ function AnimateWalking(props) {
     maxHeight: '700px',
     height: '100%',
   }
-  if(window.innerWidth>1080){
+  if(window.innerWidth>1600){
     styleC.marginTop="-35%";
   }
   return (
