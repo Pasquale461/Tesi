@@ -4,12 +4,13 @@ import animationWalk from '../Animations/walking.json';
 import animationCity from '../Animations/city.json';
 import animationSem from '../Animations/semaforo.json';
 import { motion } from 'framer-motion'
-
 import Backdrop from '@mui/material/Backdrop';
+import './../Ctfs.css';
 import { ClickAwayListener } from '@mui/base/ClickAwayListener';
 
 
-function AnimateWalking(modulo) {
+function AnimateWalking(props) {
+  const { type , imgPath } = props; 
   const [open, setOpen] = React.useState(false);
   const handleClose = () => {
     setOpen(false);
@@ -19,6 +20,10 @@ function AnimateWalking(modulo) {
   };
   const handleClickAway = () => {
     setOpen(false);
+  };
+
+  const zoom = {
+   
   };
 
   const style = {
@@ -69,12 +74,9 @@ function AnimateWalking(modulo) {
         animationData={animationCity}
         style={styleC}
       />
-      <motion.div style={styl} animate={{ x: '-80%' }} onClick={handleOpen}>
+      <motion.div style={styl} animate={{ x: '-80%' , y: '+40%' , width: '70%' }} onClick={handleOpen}>
         {/** immagine o gif in base all'attacco */}
-        <Lottie
-          animationData={animationSem}
-          style={styleS}
-        />
+        <img src={imgPath} className='zoom'/>
       </motion.div>
       <Backdrop
         sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
@@ -84,7 +86,7 @@ function AnimateWalking(modulo) {
         style={cont}>
 
         </div>
-        {modulo.type}
+        {type}
       </Backdrop>
 
     </div>
