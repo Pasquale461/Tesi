@@ -42,8 +42,8 @@ function CtfSelector(props) {
           "CODE INJECTION" : <AnimateWalking type={<CODEINJECTION_B/>} imgPath={require('./../images/municipio.png')}/>, 
         },
         '4': {
-          PHISHING: <AnimateWalking type={<PHISHING_B/>} imgPath={require('./../images/data.png')}/>,
-          'SQL Injection' : <AnimateWalking type={<SQLInjection_B/>} imgPath={require('./../images/hospital.png')}/>,
+          PHISHING: <AnimateWalking type={<PHISHING_B/>} imgPath={require('./../images/hospital.png')}/>,
+          'SQL Injection' : <AnimateWalking type={<SQLInjection_B/>} imgPath={require('./../images/data.png')}/>,
         }
       
     },

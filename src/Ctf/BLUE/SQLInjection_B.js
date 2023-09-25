@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
+import '../../PopupBlue.css';
 
 function SQLInjection_B() {
     const [stat, setStat] = React.useState(false);
@@ -29,16 +30,16 @@ function SQLInjection_B() {
     return (
         <div style={style}>
             <div>
-                <h1>Titolo</h1>
-                <p>TESTO DESCRITTIVO</p>
+                <h1>SQL INJECTION</h1>
+                <p>L'attacco SQL Injection è una minaccia per la sicurezza delle città intelligenti, in quanto permette agli aggressori di accedere a informazioni sensibili dei cittadini attraverso vulnerabilità nei database. Per difendersi, è essenziale validare rigorosamente i dati in ingresso, utilizzare query parametrizzate, implementare un firewall delle applicazioni web e mantenere costantemente aggiornati i sistemi, al fine di proteggere le informazioni critiche.</p>
             </div>
             <div>
-                <h3>DOMANDA?</h3>
+                <h3>Per difendersi da un attacco SQL Injection, è cruciale validare accuratamente __________ per garantire che non contengano comandi dannosi.</h3>
                 <Stack direction="row" spacing={2} justifyContent="center" alignItems="flex-end">
-                    <Button variant="contained" color={color_1} disabled={stat} onClick={() => setColor_1('error')}>RISP 1</Button>
-                    <Button variant="contained" color={color_2} disabled={stat} onClick={() => setColor_2('error')}>RISP 2</Button>
-                    <Button variant="contained" color={color} onClick={handleTrue}>RISP 3</Button>
-                    <Button variant="contained" color={color_3} disabled={stat} onClick={() => setColor_3('error')}>RISP 4</Button>
+                    <Button variant="contained" color={color_1} disabled={stat} onClick={() => setColor_1('error')}> backup automatici</Button>
+                    <Button variant="contained" color={color_2} disabled={stat} onClick={() => setColor_2('error')}>password complesse</Button>
+                    <Button variant="contained" color={color} onClick={handleTrue}>query parametrizzate</Button>
+                    <Button variant="contained" color={color_3} disabled={stat} onClick={() => setColor_3('error')}> firme digitali</Button>
                 </Stack>
             </div>
         </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
+import '../../PopupBlue.css';
 
 function DDOS_B() {
     const [stat, setStat] = React.useState(false);
@@ -29,16 +30,16 @@ function DDOS_B() {
     return (
         <div style={style}>
             <div>
-                <h1>Titolo</h1>
-                <p>TESTO DESCRITTIVO</p>
+                <h1>DDOS</h1>
+                <p>Un attacco DDoS su un sistema di controllo del traffico in una città intelligente è un pericolo in grado di congestionare la rete, mettendo a rischio la sicurezza pubblica.<br></br> Per difendersi, è essenziale implementare difese avanzate, monitorare costantemente il traffico, assicurare un'infrastruttura robusta e collaborare con i provider di servizi Internet per bloccare le fonti dannose alla radice. La formazione del personale è fondamentale per una risposta tempestiva.</p>
             </div>
             <div>
-                <h3>DOMANDA?</h3>
+                <h3>___ è una tecnica comune per difendersi da un attacco DDoS.</h3>
                 <Stack direction="row" spacing={2} justifyContent="center" alignItems="flex-end">
-                    <Button variant="contained" color={color_1} disabled={stat} onClick={() => setColor_1('error')}>RISP 1</Button>
-                    <Button variant="contained" color={color_2} disabled={stat} onClick={() => setColor_2('error')}>RISP 2</Button>
-                    <Button variant="contained" color={color} onClick={handleTrue}>RISP 3</Button>
-                    <Button variant="contained" color={color_3} disabled={stat} onClick={() => setColor_3('error')}>RISP 4</Button>
+                    <Button className="btn-custom" variant="contained" color={color_1} disabled={stat} onClick={() => setColor_1('error')}>La disattivazione del firewall</Button>
+                    <Button className="btn-custom" variant="contained" color={color_2} disabled={stat} onClick={() => setColor_2('error')}>La condivisione delle password</Button>
+                    <Button className="btn-custom" variant="contained" color={color} onClick={handleTrue}>L'analisi del traffico</Button>
+                    <Button className="btn-custom" variant="contained" color={color_3} disabled={stat} onClick={() => setColor_3('error')}>L'utilizzo di antivirus</Button>
                 </Stack>
             </div>
         </div>

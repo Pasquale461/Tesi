@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
+import '../../PopupBlue.css';
 
 function FLOODING_B() {
     const [stat, setStat] = React.useState(false);
@@ -29,16 +30,16 @@ function FLOODING_B() {
     return (
         <div style={style}>
             <div>
-                <h1>Titolo</h1>
-                <p>TESTO DESCRITTIVO</p>
+                <h1>DATA FLOODING</h1>
+                <p>Nelle città intelligenti moderne, l'infrastruttura stradale gioca un ruolo cruciale nella gestione efficiente del traffico. L'attacco di Data Flooding in un sistema di gestione del traffico di una città intelligente è un tentativo di sovraccaricare il sistema con dati falsificati o dannosi, creando il caos nelle strade. Per difendersi, è fondamentale implementare filtri per rilevare e bloccare dati sospetti e utilizzare autenticazione e crittografia avanzate per proteggere l'integrità dei dati.</p>
             </div>
             <div>
-                <h3>DOMANDA?</h3>
+                <h3>Per proteggersi, è importante implementare un robusto sistema di ____________ per identificare e bloccare dati dannosi.</h3>
                 <Stack direction="row" spacing={2} justifyContent="center" alignItems="flex-end">
-                    <Button variant="contained" color={color_1} disabled={stat} onClick={() => setColor_1('error')}>RISP 1</Button>
-                    <Button variant="contained" color={color_2} disabled={stat} onClick={() => setColor_2('error')}>RISP 2</Button>
-                    <Button variant="contained" color={color} onClick={handleTrue}>RISP 3</Button>
-                    <Button variant="contained" color={color_3} disabled={stat} onClick={() => setColor_3('error')}>RISP 4</Button>
+                    <Button className="btn-custom" variant="contained" color={color_1} disabled={stat} onClick={() => setColor_1('error')}>Autenticazione</Button>
+                    <Button className="btn-custom" variant="contained" color={color_2} disabled={stat} onClick={() => setColor_2('error')}>Criptazione</Button>
+                    <Button className="btn-custom" variant="contained" color={color_3} disabled={stat} onClick={() => setColor_3('error')}>Condivisione</Button>
+                    <Button className="btn-custom" variant="contained" color={color} onClick={handleTrue}>Filtraggio</Button>
                 </Stack>
             </div>
         </div>
