@@ -3,7 +3,7 @@ function DDOS () {
 
 return (
         <div id="cyber-kill-chain">
-        <h1 className='title'>Fasi della Cyber Kill Chain</h1>
+        <h1 className='title'>DISTRIBUTED DENIAL OF SERVICE(DDOS)</h1>
         <div class="kill-chain-phase">
             <h2>1. Reconnaissance (Ricerca)</h2>
 

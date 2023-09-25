@@ -1,22 +1,13 @@
 import React, { useRef, useEffect } from 'react';
 import './../CtfStyle.css';
-import DDOS from '../Ctf/RED/DDOS';
-import PHISHING from '../Ctf/RED/PHISHING';
-import DDOS_B from '../Ctf/BLUE/DDOS_B';
 import { animateScroll as scroll } from 'react-scroll';
-import FLOODING from '../Ctf/RED/FLOODING';
-import SQLInjection from '../Ctf/RED/SQLInjection';
-import SPOOFING from '../Ctf/RED/SPOOFING';
-import FIRMWARE from '../Ctf/RED/FIRMWARE';
-import CODEINJECTION from '../Ctf/RED/CODEINJECTION';
-import RAMSOWARE from '../Ctf/RED/RAMSOWARE';
 import AnimateWalking from '../components/Animation'
-
+import { CODEINJECTION_B, FIRMWARE_B, FLOODING_B, DDOS_B, RAMSOWARE_B, SQLInjection_B, PHISHING_B, SPOOFING_B } from '../Ctf/BLUE';
+import { CODEINJECTION, FIRMWARE, FLOODING, DDOS, RAMSOWARE, SQLInjection, PHISHING, SPOOFING } from '../Ctf/RED';
 
 function CtfSelector(props) {
   const { name, level, team } = props;
   
-
 
   const componentMap = {
     red: {
@@ -40,19 +31,19 @@ function CtfSelector(props) {
       blue: {
         '1': {
           DDOS: <AnimateWalking type={<DDOS_B/>}/>,
-          SQL_INJECTION : <div></div> 
+          RAMSOWARE : <AnimateWalking type={<RAMSOWARE_B/>}/>,
         },
         '2': {
-          DDOS: <span></span>,
-          SQL_INJECTION : <div></div> 
+          SPOOFING: <AnimateWalking type={<SPOOFING_B/>}/>,
+          'FIRMWARE ATTACK' : <AnimateWalking type={<FIRMWARE_B/>}/>,
         },
         '3': {
-          DDOS: <span></span>,
-          SQL_INJECTION : <div></div> 
+          "DATA FLOODING": <AnimateWalking type={<FLOODING_B/>}/>,
+          "CODE INJECTION" : <AnimateWalking type={<CODEINJECTION_B/>}/>, 
         },
         '4': {
-          DDOS: <span></span>,
-          SQL_INJECTION : <div></div> 
+          PHISHING: <AnimateWalking type={<PHISHING_B/>}/>,
+          'SQL Injection' : <AnimateWalking type={<SQLInjection_B/>}/>,
         }
       
     },

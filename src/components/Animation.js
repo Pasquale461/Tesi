@@ -4,7 +4,6 @@ import animationWalk from '../Animations/walking.json';
 import animationCity from '../Animations/city.json';
 import animationSem from '../Animations/semaforo.json';
 import { motion } from 'framer-motion'
-
 import Backdrop from '@mui/material/Backdrop';
 import { ClickAwayListener } from '@mui/base/ClickAwayListener';
 
