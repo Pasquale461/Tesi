@@ -13,6 +13,16 @@
 }
 
 
+.zoom
+{
+  transition: transform 0.1s;
+}
+.zoom:hover
+{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
 #griglia
 {
   justify-content: space-between

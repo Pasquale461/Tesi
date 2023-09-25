@@ -30,20 +30,20 @@ function CtfSelector(props) {
     },
       blue: {
         '1': {
-          DDOS: <AnimateWalking type={<DDOS_B/>}/>,
-          RAMSOWARE : <AnimateWalking type={<RAMSOWARE_B/>}/>,
+          DDOS: <AnimateWalking type={<DDOS_B/>} imgPath={require('./../images/autobus.png')}/>,
+          RAMSOWARE : <AnimateWalking type={<RAMSOWARE_B/>} imgPath={require('./../images/lampione.png')}/>,
         },
         '2': {
-          SPOOFING: <AnimateWalking type={<SPOOFING_B/>}/>,
-          'FIRMWARE ATTACK' : <AnimateWalking type={<FIRMWARE_B/>}/>,
+          SPOOFING: <AnimateWalking type={<SPOOFING_B/>} imgPath={require('./../images/wifi.png')}/>,
+          'FIRMWARE ATTACK' : <AnimateWalking type={<FIRMWARE_B/>} imgPath={require('./../images/autovelox.png')}/>,
         },
         '3': {
-          "DATA FLOODING": <AnimateWalking type={<FLOODING_B/>}/>,
-          "CODE INJECTION" : <AnimateWalking type={<CODEINJECTION_B/>}/>, 
+          "DATA FLOODING": <AnimateWalking type={<FLOODING_B/>} imgPath={require('./../images/cloud.png')}/>,
+          "CODE INJECTION" : <AnimateWalking type={<CODEINJECTION_B/>} imgPath={require('./../images/municipio.png')}/>, 
         },
         '4': {
-          PHISHING: <AnimateWalking type={<PHISHING_B/>}/>,
-          'SQL Injection' : <AnimateWalking type={<SQLInjection_B/>}/>,
+          PHISHING: <AnimateWalking type={<PHISHING_B/>} imgPath={require('./../images/data.png')}/>,
+          'SQL Injection' : <AnimateWalking type={<SQLInjection_B/>} imgPath={require('./../images/hospital.png')}/>,
         }
       
     },
