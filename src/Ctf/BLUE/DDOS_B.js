@@ -35,10 +35,10 @@ function DDOS_B() {
             <div>
                 <h3>DOMANDA?</h3>
                 <Stack direction="row" spacing={2} justifyContent="center" alignItems="flex-end">
-                    <Button variant="outlined" color={color_1} disabled={stat} onClick={() => setColor_1('error')}>RISP 1</Button>
-                    <Button variant="outlined" color={color_2} disabled={stat} onClick={() => setColor_2('error')}>RISP 2</Button>
-                    <Button variant="outlined" color={color} onClick={handleTrue}>RISP 3</Button>
-                    <Button variant="outlined" color={color_3} disabled={stat} onClick={() => setColor_3('error')}>RISP 4</Button>
+                    <Button variant="contained" color={color_1} disabled={stat} onClick={() => setColor_1('error')}>RISP 1</Button>
+                    <Button variant="contained" color={color_2} disabled={stat} onClick={() => setColor_2('error')}>RISP 2</Button>
+                    <Button variant="contained" color={color} onClick={handleTrue}>RISP 3</Button>
+                    <Button variant="contained" color={color_3} disabled={stat} onClick={() => setColor_3('error')}>RISP 4</Button>
                 </Stack>
             </div>
         </div>

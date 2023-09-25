@@ -1,18 +1,23 @@
 #textblock {
   background-color: #1c0038;
-  
-  height: 100%;
-  height:max-content;
+
+  height: 75%;
 }
 
 #textblock-container {
   width: 50%;
   height: 100%;
   margin: 0 auto;
-  padding-top: 70px;
+  overflow-y: scroll;
 }
 
+#textblock-container::-webkit-scrollbar-thumb {
+  background-color: white;
+}
+
+
 #textblock-title {
+  text-align: center;
   color: #a74fdee3;
   font-size: 35px;
   font-weight: 600;
@@ -30,9 +35,9 @@
   position: fixed;
   width: 100%;
   bottom: 0px;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   margin-bottom: 20px;
 
 }
@@ -44,26 +49,28 @@
   font-weight: 600;
 }
 
-.animation, .animation_layer {
-	height: 1000px;
+.animation,
+.animation_layer {
+  height: 1000px;
 }
 
 .animation {
   display: block;
-	position: relative;
-	z-index: 10;
+  position: relative;
+  z-index: 10;
 }
 
 .animation_layer {
-	background-position: bottom center;
-	background-size:cover;
-	width: 100%;
+  background-position: bottom center;
+  background-size: cover;
+  width: 100%;
   height: 100%;
-	position: absolute;
+  position: absolute;
   object-fit: cover;
 }
+
 .animation_layer.parallax {
-	position: fixed;
+  position: fixed;
 }
 
 #sky {
@@ -73,62 +80,67 @@
 
 #stars {
   background-image: url(./images/stars.png);
- 
+
 }
 
 
 #city {
   background-image: url(./images/palazzi.png);
- 
+
 }
 
 #city2 {
   background-image: url(./images/palazzi2.png);
- 
+
 }
 
 #bridge {
   background-image: url(./images/primo.png);
- 
+
 }
 
-body
-{
+body {
   background-color: #1c0038;
-  display:flex;
+  display: flex;
   margin: auto;
   overflow-x: hidden;
-  overflow-y: scroll;
-  
+
 }
 
-
-.hack
-{
-
-height: 40%;
-align-self: center;
-width: auto;
- 
+#Hack {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-image: linear-gradient(180deg, rgb(28, 0, 56) 17%, rgb(66, 0, 132) 63%);
 }
 
-.center{
+.hack {
+
+  height: 40%;
+  align-self: center;
+  width: auto;
+
+}
+
+.center {
   text-align: center;
   display: block;
   justify-content: center;
   align-items: center;
   margin: auto;
-  
+
 }
 
-#hacker
-{
+#hacker {
   scale: 0.3;
 }
-#hacker:hover
-{
 
-  transform: scale(1.2); /* Aumenta la dimensione del 20% al passaggio del mouse */
+#hacker:hover {
+
+  transform: scale(1.2);
+  /* Aumenta la dimensione del 20% al passaggio del mouse */
   cursor: pointer;
   transition-duration: 0.5s;
 }
@@ -140,7 +152,7 @@ width: auto;
 
 
 
-.texthide{
+.texthide {
   color: #f9fafb;
 }
 
@@ -149,28 +161,23 @@ width: auto;
 
 
 
-#root
-{
+#root {
   width: 100%;
 }
 
-a
-{
+a {
   text-decoration: none;
   color: black;
 }
 
-::-webkit-scrollbar
-{
+::-webkit-scrollbar {
   width: 6px;
 }
 
-::-webkit-scrollbar-thumb
-{
+::-webkit-scrollbar-thumb {
   background-color: #9e2d91;
 }
 
-::-webkit-scrollbar-thumb:hover
-{
+::-webkit-scrollbar-thumb:hover {
   background-color: rgb(159, 39, 89);
 }

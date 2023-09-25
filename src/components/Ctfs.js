@@ -88,7 +88,7 @@ function Ctfs() {
 
 
       </div>
-      <div className='ciao'>
+      <div className='freccie'>
         <div id='arrows'>
           <div className='arrow sx' onClick={() => impostaVariabile(miaVariabile - 1)}>
             <span></span>
@@ -108,11 +108,6 @@ function Ctfs() {
 
 
       )}
-      <br></br><br></br><br>
-      </br><br></br><br></br>
-
-
-
       <Footer></Footer>
     </div>
   );

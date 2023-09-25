@@ -1,6 +1,6 @@
 #ctf
 {
-  background-image: linear-gradient(90deg, rgba(237, 110, 160, 0.83) 17%, rgba(167, 104, 237, 0.76) 63%);
+  background-image: linear-gradient(90deg, rgb(134, 62, 180) 17%, rgb(212, 87, 255) 63%);
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 5%;
@@ -75,6 +75,9 @@ color: aliceblue;
   width: 10pc;
   text-align: center;
   box-shadow: 0 4px 6px rgba(228, 221, 221, 0.556);
+}
+.freccie{
+  margin-bottom: 5%;
 }
   #arrows
   {
