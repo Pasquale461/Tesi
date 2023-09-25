@@ -2,7 +2,7 @@
 import React from 'react';
 import './../App.css';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
-import TextBlock from '../textBlocks';
+import TextBlock from './textBlocks';
 import { Link } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';

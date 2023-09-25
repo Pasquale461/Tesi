@@ -24,9 +24,10 @@
   font-weight: 600;
 }
 
-#textblock-content {
+.textblock-content {
   color: #f9fafb;
-  font-size: 20px;
+  font-size: 25px;
+  
 }
 
 #textblock-footer {
