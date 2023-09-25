@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
+import '../../PopupBlue.css';
 
 function CODEINJECTION_B() {
     const [stat, setStat] = React.useState(false);
@@ -29,16 +30,16 @@ function CODEINJECTION_B() {
     return (
         <div style={style}>
             <div>
-                <h1>Titolo</h1>
-                <p>TESTO DESCRITTIVO</p>
+                <h1>CODE INJECTION</h1>
+                <p>Un attacco di code injection è quando un aggressore inserisce codice dannoso in un servizio cloud di videosorveglianza di una città intelligente, sfruttando falle nella sicurezza. Per difendersi, è essenziale implementare validazioni rigorose dei dati, utilizzare framework sicuri, mantenere il software aggiornato e adottare misure di autenticazione e monitoraggio costante. La formazione del personale è altrettanto importante per riconoscere e rispondere prontamente agli attacchi.</p>
             </div>
             <div>
-                <h3>DOMANDA?</h3>
+                <h3>Per prevenire un attacco di code injection, è consigliabile utilizzare un ___ delle applicazioni web.</h3>
                 <Stack direction="row" spacing={2} justifyContent="center" alignItems="flex-end">
-                    <Button variant="contained" color={color_1} disabled={stat} onClick={() => setColor_1('error')}>RISP 1</Button>
-                    <Button variant="contained" color={color_2} disabled={stat} onClick={() => setColor_2('error')}>RISP 2</Button>
-                    <Button variant="contained" color={color} onClick={handleTrue}>RISP 3</Button>
-                    <Button variant="contained" color={color_3} disabled={stat} onClick={() => setColor_3('error')}>RISP 4</Button>
+                    <Button className="btn-custom" variant="contained" color={color_1} disabled={stat} onClick={() => setColor_1('error')}>Backup</Button>
+                    <Button className="btn-custom" variant="contained" color={color} onClick={handleTrue}>Firewall</Button>
+                    <Button className="btn-custom" variant="contained" color={color_2} disabled={stat} onClick={() => setColor_2('error')}>Account utente</Button>
+                    <Button className="btn-custom" variant="contained" color={color_3} disabled={stat} onClick={() => setColor_3('error')}>Antivirus</Button>
                 </Stack>
             </div>
         </div>

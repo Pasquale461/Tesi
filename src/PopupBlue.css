@@ -1,0 +1,10 @@
+div > p {
+    font-size: 100%;
+  }
+
+.btn-custom {
+    border-radius: 50px;
+    font-size: 50%;
+    margin-left: 20%;
+    margin-right: 20%;
+}

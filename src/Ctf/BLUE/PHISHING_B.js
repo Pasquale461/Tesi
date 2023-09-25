@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
+import '../../PopupBlue.css';
 
 function PHISHING_B() {
     const [stat, setStat] = React.useState(false);
@@ -29,16 +30,16 @@ function PHISHING_B() {
     return (
         <div style={style}>
             <div>
-                <h1>Titolo</h1>
-                <p>TESTO DESCRITTIVO</p>
+                <h1>PHISHING</h1>
+                <p>L'attacco di phishing è una tattica sofisticata utilizzata da cibercriminali per ottenere informazioni sensibili, come dettagli di accesso a servizi online, carte di credito o dati personali, travestendosi da entità di fiducia. Per difendersi, è essenziale educare i cittadini a riconoscere messaggi sospetti, verificare sempre le fonti online e implementare misure di sicurezza avanzate, come l'autenticazione a due fattori, per proteggere i dati sensibili.</p>
             </div>
             <div>
-                <h3>DOMANDA?</h3>
+                <h3>L'utilizzo dell'__________ a due fattori può fornire una sicurezza aggiuntiva contro gli attacchi di phishing</h3>
                 <Stack direction="row" spacing={2} justifyContent="center" alignItems="flex-end">
-                    <Button variant="contained" color={color_1} disabled={stat} onClick={() => setColor_1('error')}>RISP 1</Button>
-                    <Button variant="contained" color={color_2} disabled={stat} onClick={() => setColor_2('error')}>RISP 2</Button>
-                    <Button variant="contained" color={color} onClick={handleTrue}>RISP 3</Button>
-                    <Button variant="contained" color={color_3} disabled={stat} onClick={() => setColor_3('error')}>RISP 4</Button>
+                    <Button className="btn-custom" variant="contained" color={color_1} disabled={stat} onClick={() => setColor_1('error')}>Hashing</Button>
+                    <Button className="btn-custom" variant="contained" color={color_2} disabled={stat} onClick={() => setColor_2('error')}>Firewall</Button>
+                    <Button className="btn-custom" variant="contained" color={color} onClick={handleTrue}>Autenticazione</Button>
+                    <Button className="btn-custom" variant="contained" color={color_3} disabled={stat} onClick={() => setColor_3('error')}>Scripting</Button>
                 </Stack>
             </div>
         </div>

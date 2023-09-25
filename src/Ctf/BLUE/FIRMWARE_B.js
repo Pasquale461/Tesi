@@ -29,16 +29,18 @@ function FIRMWARE_B() {
     return (
         <div style={style}>
             <div>
-                <h1>Titolo</h1>
-                <p>TESTO DESCRITTIVO</p>
+                <h1>ATTACCO FIRMWARE AUTOVELOX</h1>
+                <p>Un attacco al firmware è un tentativo di compromettere il software di base incorporato in un dispositivo, come un dispositivo IoT, per ottenere il controllo o l'accesso non autorizzato. In una città intelligente, questo tipo di attacco può mettere a rischio l'intera infrastruttura, inclusi sistemi critici come quelli di gestione energetica o dei trasporti applicato al rispetto delle velocità con gli autovelox.
+
+Per proteggersi da un attacco al firmware, è essenziale mantenere il software del dispositivo sempre aggiornato per rimediare a vulnerabilità conosciute. Inoltre, l'uso di autenticazioni forti e il monitoraggio continuo per rilevare comportamenti anomali sono cruciali per la sicurezza.</p>
             </div>
             <div>
                 <h3>DOMANDA?</h3>
                 <Stack direction="row" spacing={2} justifyContent="center" alignItems="flex-end">
-                    <Button variant="contained" color={color_1} disabled={stat} onClick={() => setColor_1('error')}>RISP 1</Button>
-                    <Button variant="contained" color={color_2} disabled={stat} onClick={() => setColor_2('error')}>RISP 2</Button>
-                    <Button variant="contained" color={color} onClick={handleTrue}>RISP 3</Button>
-                    <Button variant="contained" color={color_3} disabled={stat} onClick={() => setColor_3('error')}>RISP 4</Button>
+                    <Button variant="contained" color={color_1} disabled={stat} onClick={() => setColor_1('error')}>Crittografato</Button>
+                    <Button variant="contained" color={color_2} disabled={stat} onClick={() => setColor_2('error')}>Isolato</Button>
+                    <Button variant="contained" color={color} onClick={handleTrue}>Aggiornato</Button>
+                    <Button variant="contained" color={color_3} disabled={stat} onClick={() => setColor_3('error')}>Ripristinato</Button>
                 </Stack>
             </div>
         </div>

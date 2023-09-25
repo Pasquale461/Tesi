@@ -24,21 +24,26 @@ function SPOOFING_B() {
         justifyContent: 'space-evenly',
         alignItems: 'center',
         zIndex: '2',
+        overflowY: 'scroll' 
     };
 
     return (
         <div style={style}>
             <div>
                 <h1>Titolo</h1>
-                <p>TESTO DESCRITTIVO</p>
+                <p>
+Lo spoofing è un tipo di attacco informatico in cui un aggressore crea falsi segnali, informazioni o identità per ingannare un sistema o un utente. Nella contesto di una città intelligente, uno degli attacchi di spoofing più comuni coinvolge la creazione di un access point Wi-Fi fasullo con un nome (SSID) apparentemente legittimo per attirare le persone a connettersi.
+
+Per proteggersi da questo tipo di attacco, è importante essere cauti quando ci si connette a reti Wi-Fi pubbliche e assicurarsi di utilizzare solo reti sicure e attendibili. Evitare di connettersi a reti aperte o non protette, verificare sempre l'autenticità delle reti Wi-Fi e utilizzare una rete privata virtuale (VPN) per cifrare il traffico Internet e proteggere i dati sensibili.O</p>
             </div>
             <div>
-                <h3>DOMANDA?</h3>
+                <h3>Per proteggersi dall'attacco di spoofing in una rete Wi-Fi, è consigliabile utilizzare ____ </h3>
                 <Stack direction="row" spacing={2} justifyContent="center" alignItems="flex-end">
-                    <Button variant="contained" color={color_1} disabled={stat} onClick={() => setColor_1('error')}>RISP 1</Button>
-                    <Button variant="contained" color={color_2} disabled={stat} onClick={() => setColor_2('error')}>RISP 2</Button>
-                    <Button variant="contained" color={color} onClick={handleTrue}>RISP 3</Button>
-                    <Button variant="contained" color={color_3} disabled={stat} onClick={() => setColor_3('error')}>RISP 4</Button>
+                    <Button variant="contained" color={color_1} disabled={stat} onClick={() => setColor_1('error')} className="btn-custom">Un Firewall </Button>
+                    <Button variant="contained" color={color_2} disabled={stat} onClick={() => setColor_2('error')} className="btn-custom">Un router</Button>
+                    
+                    <Button variant="contained" color={color_3} disabled={stat} onClick={() => setColor_3('error')} className="btn-custom">Un' Antivirus</Button>
+                    <Button variant="contained" color={color} onClick={handleTrue} className="btn-custom"> una VPN</Button>
                 </Stack>
             </div>
         </div>
