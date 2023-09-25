@@ -23,6 +23,7 @@
   
   .header-title {
     font-family: 'Courier New', monospace;
+    color: rgb(255, 212, 253);
     font-size: 24px;
     margin: 1%;
   }
@@ -92,3 +93,4 @@
   {
     font-size: 200%;
   }
+  

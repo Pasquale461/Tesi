@@ -12,9 +12,6 @@ function Home() {
     <div className="App">
       <Header></Header>
       <Parallax pages={3.17} style={{ top: '0', left: '0' }} className="animation">
-        {/*<ParallaxLayer offset={0} speed={-1}>
-          <div className="animation_layer parallax" id="Logo"></div>
-          </ParallaxLayer>*/}
         <ParallaxLayer offset={0} speed={0.1}>
           <div className="animation_layer parallax" id="sky"></div>
         </ParallaxLayer>
@@ -24,6 +21,9 @@ function Home() {
         <ParallaxLayer offset={0} speed={0.3}>
           <div className="animation_layer parallax" id="city"></div>
         </ParallaxLayer>
+        <ParallaxLayer offset={0} speed={-0.1}>
+          <div className="animation_layer parallax" id="Logo"></div>
+          </ParallaxLayer>
         <ParallaxLayer offset={0} speed={0.4}>
           <div className="animation_layer parallax" id="bridge"></div>
         </ParallaxLayer>

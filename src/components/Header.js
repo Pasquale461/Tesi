@@ -19,6 +19,10 @@ const Header = () => {
     const closeMenu = () => {
         setMenuOpen(false);
     };
+    const menuLogo = {
+        width: '120px',
+        height: '120px',
+    }
 
     return (
         <div className={`header ${isMenuOpen ? 'menu-open' : ''}`}>
@@ -52,9 +56,13 @@ const Header = () => {
                   onClick: closeMenu,
                 }}>
 
-                   Logo <br></br><br></br><br></br><br></br>
+                
                 <List >
-                    <ListItem  button component={Link} to='../' onClick={() => setMenuOpen(true)}>
+                    <ListItem className='center'>
+                        <img src={require("../images/LogoSV.png")} style={menuLogo}/>
+                    </ListItem>
+                    <Divider></Divider>
+                    <ListItem  button component={Link} to='../' onClick={() => setMenuOpen(true)}> 
                         <HomeIcon /><a href="#" className='LinkNav' >Home</a>
                     </ListItem>
                     <Divider></Divider>
@@ -62,7 +70,7 @@ const Header = () => {
                         <LocationCityIcon /><a href="#" className='LinkNav'>Smart City</a>
                     </ListItem>
                     <ListItem  button component={Link} to='../Contact' onClick={() => setMenuOpen(true)}>
-                        <HomeIcon /><a href="#" className='LinkNav'>Home</a>
+                        <InfoIcon /><a href="#" className='LinkNav'>Contact</a>
                     </ListItem>
                 </List>
 
