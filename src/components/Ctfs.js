@@ -104,7 +104,7 @@ function Ctfs() {
       </div>
       {nameAfterDrop && (
 
-        <CtfSelector name={nameAfterDrop} level={miaVariabile} team={isCheckboxEnabled ? 'blue' : 'red'} />
+        <CtfSelector name={nameAfterDrop} level={miaVariabile} team={isCheckboxEnabled ? 'red' : 'blue'} />
 
 
       )}

@@ -11,8 +11,9 @@
   overflow-y: scroll;
 }
 
-#textblock-container::-webkit-scrollbar-thumb {
-  background-color: white;
+
+#textblock-container::-webkit-scrollbar {
+  background-color: rgb(204, 178, 204, 0.3);
 }
 
 
@@ -164,6 +165,8 @@ a {
 
 ::-webkit-scrollbar {
   width: 6px;
+  background-color: rgb(204, 178, 204, 0.6);
+  border-radius: 25px;
 }
 
 ::-webkit-scrollbar-thumb {
