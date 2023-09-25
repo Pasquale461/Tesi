@@ -36,7 +36,7 @@ function AnimateWalking(props) {
     width: '40%',
     position: 'absolute',
     left: '100%',
-    top: '30%',
+    top: '65%',
     zIndex: '3',
   };
   const styleS = {
@@ -70,7 +70,7 @@ function AnimateWalking(props) {
         animationData={animationCity}
         style={styleC}
       />
-      <motion.div style={styl} animate={{ x: '-80%' }} onClick={handleOpen}>
+      <motion.div style={styl} animate={{ x: '-80%'}} onClick={handleOpen}>
         {/** immagine o gif in base all'attacco */}
         <img src={imgPath} className='zoom'/>
       </motion.div>
