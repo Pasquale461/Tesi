@@ -10,11 +10,11 @@
   margin: 0 auto;
   overflow-y: scroll;
 }
-
+/*
 #textblock-container::-webkit-scrollbar-thumb {
-  background-color: white;
+  background-color: #b7548b;
 }
-
+*/
 
 #textblock-title {
   text-align: center;
@@ -164,6 +164,8 @@ a {
 
 ::-webkit-scrollbar {
   width: 6px;
+  background-color: #ccb2cc;
+  border-radius: 25px;
 }
 
 ::-webkit-scrollbar-thumb {
