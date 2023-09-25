@@ -2,11 +2,9 @@ import React from 'react';
 import Lottie from 'lottie-react';
 import animationWalk from '../Animations/walking.json';
 import animationCity from '../Animations/city.json';
-import animationSem from '../Animations/semaforo.json';
 import { motion } from 'framer-motion'
 import Backdrop from '@mui/material/Backdrop';
 import './../Ctfs.css';
-import { ClickAwayListener } from '@mui/base/ClickAwayListener';
 
 
 function AnimateWalking(props) {
@@ -18,13 +16,7 @@ function AnimateWalking(props) {
   const handleOpen = () => {
     setOpen(true);
   };
-  const handleClickAway = () => {
-    setOpen(false);
-  };
-
-  const zoom = {
-   
-  };
+  
 
   const style = {
     height: '30%',
@@ -63,6 +55,10 @@ function AnimateWalking(props) {
     overflow: 'hidden',
     width: '75%',
     maxHeight: '700px',
+    height: '100%',
+  }
+  if(window.innerWidth>1080){
+    styleC.marginTop="-35%";
   }
   return (
     <div style={anim}>
