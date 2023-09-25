@@ -29,7 +29,8 @@ const Header = () => {
             <button className="menu-toggle" onClick={toggleMenu}>
                 ☰ Menu
             </button>
-            Logo
+            <h1 className="header-title">CyberValley</h1>
+            
             <h1 className="header-title">Hacker's Playground</h1>
             {/*
       <nav className={`header-nav ${isMenuOpen ? 'open' : ''}`}>

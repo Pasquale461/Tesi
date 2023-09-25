@@ -6,7 +6,7 @@
 
 #textblock-container {
   width: 50%;
-  height: 100%;
+  height: 200%;
   margin: 0 auto;
   overflow-y: scroll;
 }
@@ -27,7 +27,7 @@
 .textblock-content {
   color: #f9fafb;
   font-size: 25px;
-  
+  margin: 20px;
 }
 
 #textblock-footer {

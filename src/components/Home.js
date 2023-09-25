@@ -11,7 +11,7 @@ function Home() {
   return (
     <div className="App">
       <Header></Header>
-      <Parallax pages={3.17} style={{ top: '0', left: '0' }} className="animation">
+      <Parallax pages={4.17} style={{ top: '0', left: '0' }} className="animation">
         <ParallaxLayer offset={0} speed={0.1}>
           <div className="animation_layer parallax" id="sky"></div>
         </ParallaxLayer>
@@ -32,7 +32,7 @@ function Home() {
           <TextBlock />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={2} speed={0} >
+        <ParallaxLayer offset={3} speed={0} >
           <div id='Hack'>
             <div>
               <Link to="Ctfs">
@@ -42,7 +42,7 @@ function Home() {
           </div>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={3} speed={0}> {/* Aggiungi un nuovo ParallaxLayer per il footer */}
+        <ParallaxLayer offset={4} speed={0}> {/* Aggiungi un nuovo ParallaxLayer per il footer */}
           <Footer />
 
         </ParallaxLayer>
