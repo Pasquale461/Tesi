@@ -1,0 +1,69 @@
+.content-wrapper {
+    display: flex;
+}
+
+.right-content{
+    width: 50%;
+}
+
+.left-content{
+    width: 50%;
+    position: relative;
+}
+
+.left-content > p{
+    font-size: 120%;
+}
+
+.rounded-box {
+    background-color: #d457ff;
+    border-radius: 10px; 
+    padding: 50px;
+    width: 80%;
+}
+
+h2 {
+    color: #fff;
+    padding-top: 5%;
+}
+
+.icon {
+    width: 55px;
+    height: 55px;
+    cursor: pointer; 
+    margin-right: 20px;
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+}
+
+.icon:hover {
+    transform: translateY(-10px);
+}
+
+.icon:hover::after {
+    content: attr(title);
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    transition: opacity 0.2s ease;
+}
+
+.icon-serlab {
+    width: 150px;
+    height: 55px;
+    cursor: pointer; 
+    margin-right: 20px;
+    transition: transform 0.2s ease;
+}
+
+.icon-serlab:hover {
+    transform: translateY(-10px);
+}
+
+
+
