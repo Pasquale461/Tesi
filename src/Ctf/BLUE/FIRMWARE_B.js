@@ -29,7 +29,7 @@ function FIRMWARE_B() {
 
     return (
         <div style={style}>
-            <div>
+            <div class="popup">
                 <h1>ATTACCO FIRMWARE AUTOVELOX</h1>
                 <p>Un attacco al firmware è un tentativo di compromettere il software di base incorporato in un dispositivo, come un dispositivo IoT, per ottenere il controllo o l'accesso non autorizzato. In una città intelligente, questo tipo di attacco può mettere a rischio l'intera infrastruttura dei trasporti applicato al rispetto delle velocità con gli autovelox.
 

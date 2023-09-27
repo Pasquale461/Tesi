@@ -29,7 +29,7 @@ function FLOODING_B() {
 
     return (
         <div style={style}>
-            <div>
+            <div class="popup">
                 <h1>DATA FLOODING</h1>
                 <p>Nelle città intelligenti moderne, l'infrastruttura stradale gioca un ruolo cruciale nella gestione efficiente del traffico. L'attacco di Data Flooding in un sistema di gestione del traffico di una città intelligente è un tentativo di sovraccaricare il sistema con dati falsificati o dannosi, creando il caos nelle strade. Per difendersi, è fondamentale implementare filtri per rilevare e bloccare dati sospetti e utilizzare autenticazione e crittografia avanzate per proteggere l'integrità dei dati.</p>
             </div>

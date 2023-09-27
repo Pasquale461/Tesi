@@ -65,7 +65,7 @@ h2 {
 
 .icon-serlab {
     scale: 0.8;
-  
+
     /* Per il not Hover*/
     transform: scale(0.8);
     transition-duration: 0.5s;

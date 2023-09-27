@@ -1,5 +1,7 @@
-p {
+.popup > p {
     font-size: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
 .btn-custom {

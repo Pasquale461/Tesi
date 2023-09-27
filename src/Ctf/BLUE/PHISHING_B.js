@@ -29,7 +29,7 @@ function PHISHING_B() {
 
     return (
         <div style={style}>
-            <div>
+            <div class="popup">
                 <h1>PHISHING</h1>
                 <p>L'attacco di phishing è una tattica sofisticata utilizzata da cibercriminali per ottenere informazioni sensibili, come dettagli di accesso a servizi online, carte di credito o dati personali, travestendosi da entità di fiducia. Per difendersi, è essenziale educare i cittadini a riconoscere messaggi sospetti, verificare sempre le fonti online e implementare misure di sicurezza avanzate, come l'autenticazione a due fattori, per proteggere i dati sensibili.</p>
             </div>

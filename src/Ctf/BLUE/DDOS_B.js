@@ -29,7 +29,7 @@ function DDOS_B() {
 
     return (
         <div style={style}>
-            <div>
+            <div class="popup">
                 <h1>DDOS</h1>
                 <p>Un attacco DDoS su un sistema di controllo del traffico in una città intelligente è un pericolo in grado di congestionare la rete, mettendo a rischio la sicurezza pubblica.<br></br> Per difendersi, è essenziale implementare difese avanzate, monitorare costantemente il traffico, assicurare un'infrastruttura robusta e collaborare con i provider di servizi Internet per bloccare le fonti dannose alla radice. La formazione del personale è fondamentale per una risposta tempestiva.</p>
             </div>

@@ -29,7 +29,7 @@ function RAMSOWARE_B() {
 
     return (
         <div style={style}>
-            <div>
+            <div class="popup">
                 <h1>RAMSOWARE</h1>
                 <p>Un attacco ransomware su un PC di una centrale elettrica di controllo in una città intelligente è una minaccia che crittografa i dati, bloccando l'erogazione di energia. La difesa richiede backup regolari, aggiornamenti di sicurezza, formazione del personale e piani di risposta agli incidenti per ripristinare il sistema senza pagare il riscatto. La protezione dei dati critici e la collaborazione con le autorità sono essenziali per evitare interruzioni dell'energia.</p>
             </div>

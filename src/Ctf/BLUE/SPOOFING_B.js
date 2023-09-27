@@ -29,7 +29,7 @@ function SPOOFING_B() {
 
     return (
         <div style={style}>
-            <div>
+            <div class="popup">
                 <h1>SPOOFING</h1>
                 <p>
 Lo spoofing crea falsi segnali, informazioni o identità per ingannare un sistema o un utente. Nella contesto di una città intelligente, uno degli attacchi di spoofing più comuni coinvolge la creazione di un access point Wi-Fi fasullo con un nome (SSID) apparentemente legittimo per attirare le persone a connettersi.

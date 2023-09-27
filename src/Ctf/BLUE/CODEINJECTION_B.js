@@ -29,7 +29,7 @@ function CODEINJECTION_B() {
 
     return (
         <div style={style}>
-            <div>
+            <div class="popup">
                 <h1>CODE INJECTION</h1>
                 <p>Un attacco di code injection è quando un aggressore inserisce codice dannoso in un servizio cloud di videosorveglianza di una città intelligente, sfruttando falle nella sicurezza. Per difendersi, è essenziale implementare validazioni rigorose dei dati, utilizzare framework sicuri, mantenere il software aggiornato e adottare misure di autenticazione e monitoraggio costante. La formazione del personale è altrettanto importante per riconoscere e rispondere prontamente agli attacchi.</p>
             </div>

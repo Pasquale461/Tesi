@@ -29,7 +29,7 @@ function SQLInjection_B() {
 
     return (
         <div style={style}>
-            <div>
+            <div class="popup">
                 <h1>SQL INJECTION</h1>
                 <p>L'attacco SQL Injection è una minaccia per la sicurezza delle città intelligenti, in quanto permette agli aggressori di accedere a informazioni sensibili dei cittadini attraverso vulnerabilità nei database. Per difendersi, è essenziale validare rigorosamente i dati in ingresso, utilizzare query parametrizzate, implementare un firewall delle applicazioni web e mantenere costantemente aggiornati i sistemi, al fine di proteggere le informazioni critiche.</p>
             </div>

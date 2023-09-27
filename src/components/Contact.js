@@ -35,7 +35,7 @@ function Contact() {
                         <h2>Lavoro di Tesi</h2>
                         <p>La nostra tesi si concentra su un progetto di sviluppo e implementazione di una piattaforma web dedicata alle Competitions in Cybersecurity,
                             chiamate CTF (Capture The Flag). L'obiettivo principale è analizzare le carenze esistenti nella formazione delle persone che vogliono imparare sulla sicurezza informatica,
-                            specialmente per coloro che sono nuovi in questo campo. In sostanza, sto creando un ambiente online dove le persone possono esercitarsi e migliorare le proprie abilità in sicurezza informatica.
+                            specialmente per coloro che sono nuovi in questo campo. In sostanza, abbiamo creato un ambiente online dove le persone possono esercitarsi e migliorare le proprie abilità in sicurezza informatica.
                             Questo è importante perché aiuta a colmare il divario tra la teoria e la pratica,
                             fornendo agli aspiranti esperti di sicurezza un luogo sicuro per imparare e crescere.</p>
                     </div>
