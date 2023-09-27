@@ -1,9 +1,14 @@
 .content-wrapper {
     display: flex;
+    text-align: center;
 }
 
 .right-content{
     width: 50%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .left-content{
@@ -11,15 +16,20 @@
     position: relative;
 }
 
-.left-content > p{
+.rounded-box > p{
     font-size: 120%;
+    background-color: #9d48d2;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.7);
+    border-radius: 10px; 
+    padding: 25px 50px;
+    text-align: start;
 }
 
 .rounded-box {
-    background-color: #d457ff;
-    border-radius: 10px; 
-    padding: 50px;
     width: 80%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
 }
 
 h2 {
@@ -54,16 +64,17 @@ h2 {
 }
 
 .icon-serlab {
-    width: 150px;
-    height: 55px;
-    cursor: pointer; 
-    margin-right: 20px;
-    transition: transform 0.2s ease;
-}
-
-.icon-serlab:hover {
-    transform: translateY(-10px);
-}
-
-
-
+    scale: 0.8;
+  
+    /* Per il not Hover*/
+    transform: scale(0.8);
+    transition-duration: 0.5s;
+  }
+  
+  .icon-serlab:hover {
+  
+    transform: scale(1);
+    /* Aumenta la dimensione del 20% al passaggio del mouse */
+    cursor: pointer;
+    transition-duration: 0.5s;
+  }
