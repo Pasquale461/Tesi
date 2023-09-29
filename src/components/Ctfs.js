@@ -44,15 +44,15 @@ function Ctfs() {
         <h2 className='titolo center words' style={{ fontSize: '45px' }}>Benvenuti nel nostro Configuratore CTF per la Smart City!</h2><br></br>
 
         <p className='testo center words' style={{ fontSize: '25px' }}>
-          Viaggiate in una Smart City virtuale e mettete alla prova le vostre abilità di <br></br>
-          sicurezza informatica come mai prima d'ora. Il nostro configuratore CTF offre<br></br>
-          ben 45 livelli di sfide che richiedono la vostra astuzia, creatività e abilità<br></br>
+          Viaggiate in una Smart City virtuale ed aumenta la consepevolezza della tua <br></br>
+          sicurezza informatica. Il nostro configuratore CTF offre<br></br>
+          ben 2 possibili attacchi per ogni livello.<br></br>
           per completare con successo.
           <br></br>
           Prima di tutto seleziona il team Brue o Red
-          <br></br>Seleziona il livello della smartcity da hackerare e trascina l'attacco nel livello per effettuarlo
+          <br></br>Seleziona il livello della SmartCity da hackerare e trascina l'attacco nel livello per effettuarlo
           <br></br>Una volta fatto segui i passaggi della cyber killchain
-          <br></br>Divertiti a giocare con le nostre CTF!
+          <br></br>Divertiti ad imparare come difendersi!
         </p>
       </div>
       <div id='ctf'>

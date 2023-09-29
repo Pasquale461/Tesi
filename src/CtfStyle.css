@@ -27,6 +27,8 @@ div > p {
   color: rgb(255, 212, 253) !important;
   font-size: 25px;
   margin-bottom: 3%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 div > b {
   color: rgb(255, 212, 253) !important;
