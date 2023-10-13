@@ -3,7 +3,7 @@ import React from 'react';
 function FIRMWARE() {
   return (
     <div id="sql-injection">
-      <h1 className='title'>SQL Injection</h1>
+      <h1 className='title'>FIRMWARE ATTACK</h1>
       <div class="attack-phase">
         <h2>1. Reconnaissance (Ricerca)</h2>
 
